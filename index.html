@@ -89,6 +89,65 @@
                 <li><a href="neon.html">Neon style</a></li>
             </ol>
         </section>
+
+        <section id="reserv">
+            <h2>Забронировать</h2>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <fieldset>
+                    <label><input type="radio" name="room" value="80's-vibes">80's vibes</label>
+                    <label><input type="radio" name="room" value="star-wars">Star wars</label>
+                    <label><input type="radio" name="room" value="wild-west">Wild west</label>
+                    <label><input type="radio" name="room" value="neon-style">Neon style</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Собери набор развлечений</legend>
+                    <fieldset>
+                        <legend>Приставка:</legend>
+                        <label><input type="radio" name="game-console" value="playstation">PlayStation</label>
+                        <label><input type="radio" name="game-console" value="sega">Sega Mega Drive</label>
+                        <label><input type="radio" name="game-console" value="x-box">X-box One S</label>
+                        <label><input type="radio" name="game-console" value="dendy">Dendy</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Настольные игры:</legend>
+                        <label><input type="checkbox" name="board-game" value="jenga">Jenga</label>
+                        <label><input type="checkbox" name="board-game" value="monopoly">Monopoly</label>
+                        <label><input type="checkbox" name="board-game" value="manchkin">Манчкин</label>
+                        <label><input type="checkbox" name="board-game" value="alias">Alias</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дополнительно:</legend>
+                        <label><input type="checkbox" name="other" value="karaoke" id="">Караоке</label>
+                        <label><input type="checkbox" name="other" value="vr" id="">VR</label>
+                    </fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Выбери дату и время</legend>
+                    <label for="date">Дата*</label>
+                    <input type="date" name="date" id="date" required>
+                    <label for="time">Время*</label>
+                    <input type="time" name="time" id="time" required>
+                    <br>
+                    <label for="count">Количество человек*</label>
+                    <input type="number" name="count" id="count" required>
+                    <br>
+                    <label for="name">Имя*</label>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <label for="surname">Фамилия*</label>
+                    <input type="text" name="surname" id="surname" required>
+                    <br>
+                    <label for="tel">Номер телефона*</label>
+                    <input type="tel" name="tel" id="tel" required>
+                    <br>
+                    <input type="checkbox" name="age" id="age">
+                    <label for="age">Я старше 18 лет</label>
+                </fieldset>
+                <button type="submit">Забронировать</button>
+                <input type="checkbox" name="accept" id="accept" required>
+                <label for="accept">Согласен на обработку данных</label>
+            </form>
+        </section>
         
         <section id="about-us">
             <h2>О нас</h2>
