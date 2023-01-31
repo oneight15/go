@@ -1,11 +1,19 @@
+.faq-list {
+    margin: 0;
+    padding: 0;
+}
+
 .faq-item {
-    position: relative;
-    background-color: #fff;
-    color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;
-    padding: 30px 70px;
+    padding: 22px 70px;
     margin-bottom: 20px;
+    line-height: 42px;
+}
+
+.faq-item:nth-child(odd) {
+    background-color: #fff;
+    color: #1C1A1A;
 }
 
 .faq-item:nth-child(even) {
@@ -13,26 +21,29 @@
     color: #fff;
 }
 
-.faq-item:after {
+.faq-item:last-child {
+    margin-bottom: 0;
+}
+
+.faq-item:nth-child(odd):after {
     content: "";
-    display: inline-block;
+    display: block;
     background-image: url("../img/open-purple.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
-    right: 70px;
-    width: 30px;
-    height: 30px;
+    float: right;
+    width: 42px;
+    height: 42px;
 }
 
 .faq-item:nth-child(even):after {
     content: "";
-    display: inline-block;
+    display: block;
     background-image: url("../img/open.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    position: absolute;
-    right: 70px;
-    width: 30px;
-    height: 30px;
+    float: right;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
 }
