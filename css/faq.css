@@ -25,10 +25,8 @@
     margin-bottom: 0;
 }
 
-.faq-item:nth-child(odd):after {
+.faq-item:after {
     content: "";
-    display: block;
-    background-image: url("../img/open-purple.svg");
     background-repeat: no-repeat;
     background-size: contain;
     float: right;
@@ -36,14 +34,10 @@
     height: 42px;
 }
 
+.faq-item:nth-child(odd):after {
+    background-image: url("../img/open-purple.svg");    
+}
+
 .faq-item:nth-child(even):after {
-    content: "";
-    display: block;
     background-image: url("../img/open.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    float: right;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
 }
