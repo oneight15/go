@@ -1,0 +1,20 @@
+.rooms-item {
+  width: 100%;
+  height: 710px;
+}
+
+.vibes {
+  background-image: url("../img/lesson8/vibes.jpg");
+}
+
+.star-wars {
+  background-image: url("../img/lesson8/star-wars.jpg");
+}
+
+.wild-west {
+  background-image: url("../img/lesson8/wild-west.jpg");
+}
+
+.neon-style {
+  background-image: url("../img/lesson8/neon-style.jpg");
+}
