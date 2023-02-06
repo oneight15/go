@@ -1,0 +1,43 @@
+.rooms-title {
+  margin-bottom: 60px;
+}
+
+.rooms-list {
+  margin-bottom: 100px;
+}
+
+.rooms-item {
+  height: 710px;
+  text-align: center;
+  padding: 275px 0;
+  margin-bottom: 60px;
+}
+
+.rooms-item:last-child {
+  margin-bottom: 0;
+}
+
+.rooms-link {
+  display: inline-block;
+  width: 211px;
+  font-size: 70px;
+  line-height: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.vibes {
+  background-image: url("../img/lesson8/vibes.jpg");
+}
+
+.star-wars {
+  background-image: url("../img/lesson8/star-wars.jpg");
+}
+
+.wild-west {
+  background-image: url("../img/lesson8/wild-west.jpg");
+}
+
+.neon-style {
+  background-image: url("../img/lesson8/neon-style.jpg");
+}
