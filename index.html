@@ -18,35 +18,35 @@
     <div class="wrapper">
         
         <main>
-            <section>
-                <h1>Game over</h1>
-                <p>Новый формат игр и отдыха</p>
-                <img src="img/lesson8/man-vr.png" alt="">
+            <section class="hero">
+                <h1 class="hero-title">Game over</h1>
+                <p class="hero-description">Новый формат игр и отдыха</p>
+                <!-- <img class="hero-img" src="img/lesson8/man-vr.png" alt=""> -->
             </section>
 
             <section id="rooms">
-                <h2>Наши залы</h2>
-                <ul>
+                <h2 class="rooms-title">Наши залы</h2>
+                <ul class="rooms-list">
                     <li class="rooms-item vibes">
-                        <a href="vibes.html">80's vibes</a>
+                        <a class="rooms-link" href="vibes.html">80's vibes</a>
                     </li>
                     <li class="rooms-item star-wars">
-                        <a href="starwars.html">Star wars</a>
+                        <a class="rooms-link" href="starwars.html">Star wars</a>
                     </li>
                     <li class="rooms-item wild-west">
-                        <a href="wildwest.html">Wild west</a>
+                        <a class="rooms-link" href="wildwest.html">Wild west</a>
                     </li>
                     <li class="rooms-item neon-style">
-                        <a href="neon.html">Neon style</a>
+                        <a class="rooms-link" href="neon.html">Neon style</a>
                     </li>
                 </ul>
             </section>
 
             <section id="reserv">
-                <h2>Забронировать зал просто</h2>
-                <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-                    <fieldset>
-                        <legend>Выбери зал</legend>
+                <h2 class="reserv-title">Забронировать зал просто</h2>
+                <form class="reserv-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                    <fieldset class="choice-room">
+                        
                         <input type="radio" name="room" value="80's-vibes" id="room1">
                         <label for="room1">80's vibes</label>
                         <input type="radio" name="room" value="star-wars" id="room2">
@@ -57,8 +57,8 @@
                         <label for="room4">Neon style</label>                    
                     </fieldset>
                     <fieldset>
-                        <legend>Собери набор развлечений</legend>
-                        <fieldset>
+                        <legend class="test">Собери набор развлечений</legend>
+                        <fieldset class="choice-console">
                             <legend>Приставка:</legend>
                             <input type="radio" name="game-console" value="playstation" id="game-console1">
                             <label for="game-console1">PlayStation</label>
@@ -69,7 +69,7 @@
                             <input type="radio" name="game-console" value="dendy" id="game-console4">
                             <label for="game-console4">Dendy</label>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="choice-game">
                             <legend>Настольные игры:</legend>
                             <input type="checkbox" name="board-game" value="jenga" id="board-game1">
                             <label for="board-game1">Jenga</label>
@@ -80,7 +80,7 @@
                             <input type="checkbox" name="board-game" value="alias" id="board-game4">
                             <label for="board-game4">Alias</label>
                         </fieldset>
-                        <fieldset>
+                        <fieldset class="choice-other">
                             <legend>Дополнительно:</legend>
                             <input type="checkbox" name="other" value="karaoke" id="other1">
                             <label for="other1">Караоке</label>
@@ -88,44 +88,41 @@
                             <label for="other2">VR</label>
                         </fieldset>
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="choice-date">
                         <legend>Выбери дату и время</legend>
-                        <div>
-                            <div>
-                                <label for="date">Дата</label>
-                                <input type="date" name="date" id="date" required>
-                                <label for="time">Время</label>
-                                <input type="time" name="time" id="time" required>
-                            </div>                    
-                            <label for="count">Сколько человек</label>
-                            <input type="number" name="count" id="count" required>
-                        </div>
-
-                        <div>
-                            <label for="name">Имя</label>
-                            <input type="text" name="name" id="name" required>
-                            <br>
-                            <label for="surname">Фамилия</label>
-                            <input type="text" name="surname" id="surname" required>
-                        </div>
-
-                        <div>
-                            <label for="tel">Телефон</label>
-                            <input type="tel" name="tel" id="tel" required>
-                            <br>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" required>
-                        </div>
+                       
+                          <label for="date">Дата</label>
+                          <input type="date" name="date" id="date" required>
+                          <label for="time">Время</label>
+                          <input type="time" name="time" id="time" required>
+                                              
+                          <label for="count">Количество человек</label>
+                          <input type="number" name="count" id="count" required>
+                        
+                          <label for="name">Имя</label>
+                          <input type="text" name="name" id="name" required>
+                          <label for="surname">Фамилия</label>
+                          <input type="text" name="surname" id="surname" required>
+                        
+                          <label for="tel">Номер телефона</label>
+                          <input type="tel" name="tel" id="tel" required>
+                          
+                          <input type="checkbox" name="age" id="age" value="age" required>
+                          <label for="age">Я старше 18 лет</label>
+                        
                     </fieldset>
                     <button type="submit">Забронировать</button>
-                    
+                    <input type="checkbox" name="accept" id="accept" value="accept" required>
+                    <label for="accept">Я согласен на обработку данных</label>
                 </form>
             </section>
                 
-            <section id="about-us">
-                <h2>О нас</h2>
-                <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p>
-                <p>Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+            <section class="about-us" id="about-us">
+                <h2 class="about-title">О нас</h2>
+                <div class="advantages">
+                  <p class="about-description">Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em> в центральной части города.</p>
+                  <p class="about-description">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+                </div>
                 <blockquote class="quote">
                     <p><strong>GAME OVER</strong> - это место незабываемых впечатлений</p>
                     <p><cite>Аркадий Абакашин, создатель игровой территории GAME OVER</cite></p>
