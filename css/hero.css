@@ -1,11 +1,20 @@
 .hero {
+  position: relative;
   padding-top: 146px;
   margin-bottom: 100px;
   height: 969px;
+}
+
+.hero::after {
+  content: "";
+  display: inline-block;
+  width: 675px;
+  height: 762px;
   background-image: url("../img/lesson8/man-vr.png");
-  background-size: 675px 762px;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .hero-title {
