@@ -20,10 +20,6 @@
   margin-bottom: 0;
 }
 
-/* .blockquote {
-  
-} */
-
 .quote {
   font-size: 44px;
   line-height: 50px;
@@ -32,12 +28,11 @@
   padding-left: 55px;
 }
 
-
-.test1 {
+.creator {
   text-align: end;
 }
 
-.creator {
+.creator-cite {
   display: inline-block;
   font-size: 20px;
   line-height: 28px;
@@ -57,10 +52,3 @@
   background-size: cover;
   background-size: 80px;
 }
-
-/* .foto {
-  width: 280px;
-  padding-right:200px;
-
-
-} */
