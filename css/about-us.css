@@ -26,6 +26,28 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   padding-left: 55px;
+  position: relative;
+}
+
+.quote::before {
+  content: "“";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #6C0287;
+  position: absolute;
+  left: 0;
+}
+
+.quote::after {
+  content: "”";
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #6C0287;
+  padding-left: 10px;
 }
 
 .creator {
