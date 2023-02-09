@@ -1,10 +1,9 @@
-.hero {
-  padding-top: 146px;
-  height: 1019px;
+.hero-container {
+  min-height: 823px;
   background-image: url("../img/lesson8/man-vr.png");
   background-size: 675px 762px;
   background-repeat: no-repeat;
-  background-position: right bottom 50px;
+  background-position: right 30px bottom;
 }
 
 .hero-title {
