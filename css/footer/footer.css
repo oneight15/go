@@ -1,0 +1,75 @@
+.footer {
+  padding-bottom: 51px;
+}
+
+.footer__title {
+  margin-bottom: 54px;
+}
+
+.footer__address {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+  margin-bottom: 39px;
+}
+
+.address__item {
+  padding-left: 66px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 35px 32px;
+}
+
+.address__item_location {
+  margin-bottom: 38px;
+  background-image: url("../../img/lesson8/location.svg");
+}
+
+.address__item_phone {
+  margin-bottom: 11px;
+  background-image: url("../../img/lesson8/phone-call.svg");
+}
+
+.address__item_email {
+  background-image: url("../../img/lesson8/email.svg");
+}
+
+.social__item {
+  display: inline-block;
+  margin-right: 26px;
+}
+
+.social__item:last-child {
+  margin-right: 0;
+}
+
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__link_vkontakte {
+  background-image: url("../../img/lesson8/vkontakte.svg");
+  
+}
+
+.social__link_telegram {
+  background-image: url("../../img/lesson8/telegram.svg");
+}
+
+.social__link_pinterest {
+  background-image: url("../../img/lesson8/pinterest.svg");
+}
+
+.social__link_stumbleupon {
+  background-image: url("../../img/lesson8/stumbleupon.svg");
+}
+
+
+

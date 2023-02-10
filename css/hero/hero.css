@@ -1,0 +1,21 @@
+.container_bg {
+  min-height: 823px;
+  background-image: url("../../img/lesson8/man-vr.png");
+  background-size: 675px 762px;
+  background-repeat: no-repeat;
+  background-position: right 30px bottom;
+}
+
+.hero__title {
+  font-size: 150px;
+  line-height: 100%;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+  text-transform: uppercase;
+}
+
+.hero__description {
+  font-size: 28px;
+  line-height: 50px;
+  padding-left: 100px;
+}
