@@ -22,17 +22,17 @@
   background-size: 35px 32px;
 }
 
-.address__item_location {
+.address__item_bg_location {
   margin-bottom: 38px;
   background-image: url("../../img/lesson8/location.svg");
 }
 
-.address__item_phone {
+.address__item_bg_phone {
   margin-bottom: 11px;
   background-image: url("../../img/lesson8/phone-call.svg");
 }
 
-.address__item_email {
+.address__item_bg_email {
   background-image: url("../../img/lesson8/email.svg");
 }
 
@@ -54,20 +54,20 @@
   background-repeat: no-repeat;
 }
 
-.social__link_vkontakte {
+.social__link_bg_vkontakte {
   background-image: url("../../img/lesson8/vkontakte.svg");
   
 }
 
-.social__link_telegram {
+.social__link_bg_telegram {
   background-image: url("../../img/lesson8/telegram.svg");
 }
 
-.social__link_pinterest {
+.social__link_bg_pinterest {
   background-image: url("../../img/lesson8/pinterest.svg");
 }
 
-.social__link_stumbleupon {
+.social__link_bg_stumbleupon {
   background-image: url("../../img/lesson8/stumbleupon.svg");
 }
 
