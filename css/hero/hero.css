@@ -1,9 +1,18 @@
 .container_bg {
+  position: relative;
   min-height: 823px;
+}
+
+.container_bg::after {
+  content: "";
+  display: inline-block;
+  width: 675px;
+  height: 762px;
   background-image: url("../../img/lesson8/man-vr.png");
-  background-size: 675px 762px;
   background-repeat: no-repeat;
-  background-position: right 30px bottom;
+  position: absolute;
+  right: 30px;
+  bottom: 0;
 }
 
 .hero__title {
