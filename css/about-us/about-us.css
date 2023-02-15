@@ -1,27 +1,33 @@
 .about-us__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.about-us__image {
+  max-width: 600px;
+  float: left;
+  margin-right: 80px;
 }
 
 .about-us__advantages {
-  margin-bottom: 70px;
+  margin-bottom: 48px;
 }
 
 .about-us__description {
   font-size: 20px;
-  line-height: 28px;
-  margin-bottom: 50px;
+  line-height: 1.4;
+  margin-bottom: 35px;
 }
 
-.about__description:last-child {
+.about-us__description:last-child {
   margin-bottom: 0;
 }
 
 .blockquote__quote {
   font-size: 44px;
-  line-height: 50px;
+  line-height: 1.14;
   text-transform: uppercase;
-  margin-bottom: 40px;
-  padding-left: 55px;
+  margin-bottom: 39px;
+  padding-left: 711px;
   position: relative;
 }
 
@@ -33,14 +39,14 @@
   text-transform: uppercase;
   color: #6C0287;
   position: absolute;
-  left: 0;
+  right: 479px;
 }
 
 .blockquote__quote::after {
   content: " ”";
   font-weight: 900;
   font-size: 44px;
-  line-height: 50px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #6C0287;
 }
@@ -53,7 +59,7 @@
   display: inline-block;
   vertical-align: middle;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
   font-style: normal;
   width: 280px;
   text-align: start;

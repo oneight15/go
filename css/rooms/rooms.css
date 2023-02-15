@@ -3,9 +3,9 @@
 }
 
 .rooms__item {
-  height: 710px;
+  min-height: 710px;
   text-align: center;
-  padding: 275px 0;
+  padding: 315px 0;
   margin-bottom: 60px;
 }
 
@@ -15,9 +15,8 @@
 
 .rooms__link {
   display: inline-block;
-  width: 211px;
   font-size: 70px;
-  line-height: 80px;
+  line-height: 1.15;
   font-weight: 700;
   text-transform: uppercase;
 }
