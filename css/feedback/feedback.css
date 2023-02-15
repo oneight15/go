@@ -1,0 +1,14 @@
+.feedback__title {
+  margin-bottom: 40px;
+}
+
+.feedback__list {
+  padding: 0 100px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.feedback__item:not(:last-child) {
+  margin-bottom: 50px;
+}

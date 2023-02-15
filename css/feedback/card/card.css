@@ -1,0 +1,20 @@
+.card {
+  display: flow-root;
+}
+
+.card__figure {
+  float: left;
+  margin-right: 20px;
+}
+
+.card__image {
+  margin-bottom: 11px;
+}
+
+.card__caption {
+  text-align: center;
+}
+
+.card__description {
+  padding-top: 52px;
+}
