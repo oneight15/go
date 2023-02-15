@@ -55,17 +55,8 @@
   text-align: end;
 }
 
-.blockquote__creator-cite {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 20px;
-  line-height: 1.4;
-  font-style: normal;
-  width: 280px;
-  text-align: start;
-}
-
-.blockquote__circle {
+.blockquote__creator::before {
+  content: "";
   display: inline-block;
   vertical-align: middle;
   width: 80px;
@@ -77,4 +68,14 @@
   background-size: cover;
   background-size: 80px;
   margin-right: 30px;
+}
+
+.blockquote__creator-cite {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  line-height: 1.4;
+  font-style: normal;
+  width: 280px;
+  text-align: start;
 }
