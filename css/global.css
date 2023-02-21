@@ -12,7 +12,9 @@ body {
   min-width: 320px;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 400;
   background-color: #1b1a1b;
   color: #ffffff;
 }
@@ -24,6 +26,8 @@ img, svg {
 }
 
 button {
+  background-color: transparent;
+  border: none;
   padding: 0;
   cursor: pointer;
 }
@@ -42,6 +46,7 @@ figure,
 fieldset,
 blockquote {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -61,7 +66,7 @@ a {
 }
 
 .section:first-child {
-  padding-top: 146px;
+  padding-top: 25px;
 }
 
 .title {

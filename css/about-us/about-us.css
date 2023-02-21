@@ -2,10 +2,18 @@
   margin-bottom: 40px;
 }
 
+.about-us__container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-us__image {
   max-width: 600px;
-  float: left;
-  margin-right: 80px;
+
+}
+
+.about-us__text {
+  max-width: 500px;
 }
 
 .about-us__advantages {
@@ -27,7 +35,6 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 39px;
-  padding-left: 711px;
   position: relative;
 }
 

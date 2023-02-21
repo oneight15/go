@@ -1,0 +1,53 @@
+.reserve {
+  background-color: #440F51;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reserve__title {
+  margin-bottom: 40px;
+}
+
+.reserve__form {
+  padding: 0 10px;
+}
+
+legend {
+  text-align: center;
+  
+}
+
+fieldset {
+  border: none;
+}
+
+.test {
+  display: flex;
+  gap: 100px;
+  justify-content: flex-end;
+}
+
+.fun__console {
+  flex-basis: 280px;
+}
+
+.fun__game {
+  flex-basis: 300px;
+}
+
+.fun__other {
+  flex-basis: 300px;
+}
+
+
+.fun__console input {
+  display: block;
+}
+
+.fun__game input {
+  display: block;
+}
+
+.fun__other input {
+  display: block;
+}

@@ -1,9 +1,9 @@
-.container_bg {
+.hero__container {
   position: relative;
   min-height: 823px;
 }
 
-.container_bg::after {
+.hero__container::after {
   content: "";
   display: inline-block;
   width: 675px;
@@ -13,6 +13,19 @@
   position: absolute;
   right: 30px;
   bottom: 0;
+}
+
+.hero__container::before {
+  content: "";
+  display: block;
+  width: 97px;
+  height: 97px;
+  background-image: url("../../img/module3/down.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 90px;
+  right: 544px;
+  z-index: 15;
 }
 
 .hero__title {
@@ -27,4 +40,51 @@
   font-size: 28px;
   line-height: 1.78;
   padding-left: 100px;
+  margin-bottom: 30px;
+}
+
+.hero__advantages {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 150px;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  align-items: end;
+}
+
+.hero__text:first-child {
+  max-width: 193px;
+}
+
+.hero__text:last-child {
+  max-width: 166px;
+}
+
+.hero__four {
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1.41;
+  color: #CD06FF;
+}
+
+.hero__new {
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 1.41;
+  font-variant: all-small-caps;
+  color: #CD06FF;
+}
+
+.hero__link {
+  display: inline-block;
+  width: 374px;
+  height: 80px;
+  background: #6C0287;
+  border-radius: 10px;
+  padding: 25px 69px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.15;
+  text-transform: uppercase;
 }

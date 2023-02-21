@@ -1,13 +1,12 @@
 .card {
-  display: flow-root;
+  display: flex;
+  gap: 20px;
 }
 
-.card__figure {
-  float: left;
-  margin-right: 20px;
-}
 
 .card__image {
+  width: 280px;
+  height: 280px;
   margin-bottom: 11px;
 }
 
@@ -16,5 +15,6 @@
 }
 
 .card__description {
+  max-width: 680px;
   padding-top: 52px;
 }
