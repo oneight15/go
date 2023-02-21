@@ -17,28 +17,27 @@
 <body>
   <header class="header">
     <div class="container">
-      <!-- подумать что входит в навигацию, а что соседний элемент в header -->
-      <nav class="navigation">
-        <img src="img/module3/logo.svg" alt="Логотип сайта Game Over">
+      <img class="header__logo" src="img/module3/logo.svg" alt="Логотип сайта Game Over">
+      <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Залы</a>
+            <a href="#rooms" class="navigation__link">Залы</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">О нас</a>
+            <a href="#about-us" class="navigation__link">О нас</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Бронь</a>
+            <a href="#reserv" class="navigation__link">Бронь</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Отзывы</a>
+            <a href="#feedback" class="navigation__link">Отзывы</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Контакты</a>
+            <a href="#contacts" class="navigation__link">Контакты</a>
           </li>
         </ul>
-        <button>Заказать звонок</button>
       </nav>
+      <button class="header-btn">Заказать звонок</button>
     </div>
   </header>
   <main>
@@ -46,36 +45,34 @@
       <div class="container container_bg">
         <h1 class="hero__title">Game over</h1>
         <p class="hero__description">Новый формат игр и отдыха</p>
-        
-        <p>4 Тематических зала</p>
-
-        <p>new Новейшая аппаратура</p>
-
-        <button>Забронировать</button>
+        <div class="hero__advantages">
+          <p class="hero__text"><span class="violet-text">4</span> Тематических зала</p>
+          <p class="hero__text"><span class="violet-text">new</span> Новейшая аппаратура</p>
+        </div>
+        <a class="hero__link" href="#reserv">Забронировать</a>
       </div>
     </section>
 
-    <section class="second section">
+    <section class="advantages section">
       <div class="container">
-        <h2>У нас есть все для классного отдыха с друзьями!</h2>
-        <ul class="second__list">
-          <li class="second__item">
+        <h2 class="advantages__title">У нас есть все для классного отдыха с друзьями!</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
             <p>VR очки</p>
           </li>
-          <li class="second__item">
-            <p>Аудио-система 5.1
-              с отличным звуком</p>
+          <li class="advantages__item">
+            <p>Аудио-система 5.1 с отличным звуком</p>
           </li>
-          <li class="second__item">
+          <li class="advantages__item">
             <p>Караоке (4 микрофона)</p>
           </li>
-          <li class="second__item">
+          <li class="advantages__item">
             <p>Настольные игры</p>
           </li>
-          <li class="second__item">
+          <li class="advantages__item">
             <p>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
           </li>
-          <li class="second__item">
+          <li class="advantages__item">
             <p>РlаyStаtiоn 5</p>
           </li>
         </ul>
@@ -200,7 +197,7 @@
       </div>
     </section>
 
-    <section class="feedback section">
+    <section class="feedback section" id="feedback">
       <div class="container">
         <h2 class="feedback__title title">Отзывы посетителей</h2>
         <ul class="feedback__list">
