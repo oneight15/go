@@ -1,0 +1,70 @@
+.choice-date-columns {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.choice-date-columns__first {
+  flex-basis: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.first__label {
+  position: relative;
+}
+
+.first__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../img/dropdown.svg");
+  background-repeat: no-repeat;
+  top: 50%;
+  right: 27px;
+}
+
+.first__input:last-child {
+  max-width: 100%;
+}
+
+.choice-date-columns__second {
+  flex-basis: 280px;
+}
+
+.choice-date-columns__third {
+  flex-basis: 300px;
+}
+
+.choice-date__input {
+  font-size: 18px;
+  line-height: 1.55;
+  padding: 12px;
+  color: #ffffff;
+  border: none;
+}
+
+input::-webkit-input-placeholder {
+  color: #000;
+}
+
+
+
+
+/* 
+
+.choice-date__input {
+  font-size: 18px;
+  line-height: 1.55;
+  padding: 12px;
+  color: #ffffff;
+  border: none;   }
+input[placeholder] {     color: black;   }
+.choice-date-columns__row {
+  display: flex;
+  gap: 32px;   }
+.choice-date__label {
+  display: inline-block;
+  max-width: 134px;   } */

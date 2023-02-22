@@ -83,19 +83,19 @@
       <div class="container">
         <h2 class="rooms__title title">Наши залы</h2>
         <ul class="rooms__list">
-            <li class="rooms__item rooms__item_vibes">
+            <li class="rooms__item rooms__item_type_vibes">
                 <a class="rooms__link" href="vibes.html">80's vibes</a>
             </li>
 
-            <li class="rooms__item rooms__item_star-wars">
+            <li class="rooms__item rooms__item_type_star-wars">
                 <a class="rooms__link" href="starwars.html">Star wars</a>
             </li>
 
-            <li class="rooms__item rooms__item_wild-west">
+            <li class="rooms__item rooms__item_type_wild-west">
                 <a class="rooms__link" href="wildwest.html">Wild west</a>
             </li>
             
-            <li class="rooms__item rooms__item_neon-style">
+            <li class="rooms__item rooms__item_type_neon-style">
                 <a class="rooms__link" href="neon.html">Neon style</a>
             </li>
         </ul>
@@ -106,79 +106,106 @@
       <div class="container">
         <h2 class="reserve__title title">Забронировать зал просто</h2>
         <form class="reserve__form form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-          <fieldset class="form__choice-room">
-            <legend>Выбери зал</legend>
-            <input type="radio" name="room" value="80's-vibes" id="room1">
-            <label for="room1">80's vibes</label>
-            <input type="radio" name="room" value="star-wars" id="room2">
-            <label for="room2">Star wars</label>
-            <input type="radio" name="room" value="wild-west" id="room3">
-            <label for="room3">Wild west</label>
-            <input type="radio" name="room" value="neon-style" id="room4">
-            <label for="room4">Neon style</label>                    
+          <fieldset class="form__fieldset choice-room">
+            <legend class="form__legend">Выбери зал</legend>
+            <div class="choice-room__btns">
+              <input class="choice-room__input" type="radio" name="room" value="80's-vibes" id="room1">
+              <label class="choice-room__label" for="room1">80's vibes</label>
+              <input class="choice-room__input" type="radio" name="room" value="star-wars" id="room2">
+              <label class="choice-room__label" for="room2">Star wars</label>
+              <input class="choice-room__input" type="radio" name="room" value="wild-west" id="room3">
+              <label class="choice-room__label" for="room3">Wild west</label>
+              <input class="choice-room__input" type="radio" name="room" value="neon-style" id="room4">
+              <label class="choice-room__label" for="room4">Neon style</label>      
+            </div>
           </fieldset>
 
-          <fieldset class="form__choice-fun fun">
-            <legend>Собери набор развлечений</legend>
-            <div class="test">
-              <fieldset class="fun__console">
-                <legend>Приставка:</legend>
-                <input type="radio" name="game-console" value="playstation" id="game-console1">
-                <label for="game-console1">PlayStation</label>
-                <input type="radio" name="game-console" value="sega" id="game-console2">
-                <label for="game-console2">Sega Mega Drive</label>
-                <input type="radio" name="game-console" value="x-box" id="game-console3">
-                <label for="game-console3">X-box One S</label>
-                <input type="radio" name="game-console" value="dendy" id="game-console4">
-                <label for="game-console4">Dendy</label>
+          <fieldset class="form__fieldset choice-fun">
+            <legend class="form__legend">Собери набор развлечений</legend>
+            <div class="choice-fun-columns">
+              <fieldset class="choice-fun__fieldset">
+                <legend class="choice-fun__legend">Приставка:</legend>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="radio" name="game-console" value="playstation" id="game-console1">
+                  <label class="choice-fun__label" for="game-console1">PlayStation</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="radio" name="game-console" value="sega" id="game-console2">
+                  <label class="choice-fun__label" for="game-console2">Sega Mega Drive</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="radio" name="game-console" value="x-box" id="game-console3">
+                  <label class="choice-fun__label" for="game-console3">X-box One S</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="radio" name="game-console" value="dendy" id="game-console4">
+                  <label class="choice-fun__label" for="game-console4">Dendy</label>
+                </div>                
               </fieldset>
 
-              <fieldset class="fun__game">
-                <legend>Настольные игры:</legend>
-                <input type="checkbox" name="board-game" value="jenga" id="board-game1">
-                <label for="board-game1">Jenga</label>
-                <input type="checkbox" name="board-game" value="monopoly" id="board-game2">
-                <label for="board-game2">Monopoly</label>
-                <input type="checkbox" name="board-game" value="manchkin" id="board-game3">
-                <label for="board-game3">Манчкин</label>
-                <input type="checkbox" name="board-game" value="alias" id="board-game4">
-                <label for="board-game4">Alias</label>
+              <fieldset class="choice-fun__fieldset">
+                <legend class="choice-fun__legend">Настольные игры:</legend>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="checkbox" name="board-game" value="jenga" id="board-game1">
+                  <label class="choice-fun__label" for="board-game1">Jenga</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="checkbox" name="board-game" value="monopoly" id="board-game2">
+                  <label class="choice-fun__label" for="board-game2">Monopoly</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="checkbox" name="board-game" value="manchkin" id="board-game3">
+                  <label class="choice-fun__label" for="board-game3">Манчкин</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="checkbox" name="board-game" value="alias" id="board-game4">
+                  <label class="choice-fun__label" for="board-game4">Alias</label>
+                </div>
               </fieldset>
 
-              <fieldset class="fun__other">
-                <legend>Дополнительно:</legend>
-                <input type="checkbox" name="other" value="karaoke" id="other1">
-                <label for="other1">Караоке</label>
-                <input type="checkbox" name="other" value="vr" id="other2">
-                <label for="other2">VR</label>
+              <fieldset class="choice-fun__fieldset">
+                <legend class="choice-fun__legend">Дополнительно:</legend>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="checkbox" name="other" value="karaoke" id="other1">
+                  <label class="choice-fun__label" for="other1">Караоке</label>
+                </div>
+                <div class="choice-fun__field">
+                  <input class="choice-fun__input" type="checkbox" name="other" value="vr" id="other2">
+                  <label class="choice-fun__label" for="other2">VR</label>
+                </div>
               </fieldset>
             </div>
           </fieldset>
 
-          <fieldset class="form__choice-date">
-            <legend>Выбери дату и время</legend>
-            <label for="date">Дата</label>
-            <input type="date" name="date" id="date" required>
-            <label for="time">Время</label>
-            <input type="time" name="time" id="time" required>
+          <fieldset class="form__fieldset choice-date">
+            <legend class="form__legend">Выбери дату и время</legend>
+            <div class="choice-date-columns">
+              <div class="choice-date-columns__first first">
+                <label class="first__label" for="date"></label>
+                <input class="choice-date__input first__input" placeholder="Дата" type="text" name="date" id="date" required>
+                <label class="first__label" for="time"></label>
+                <input class="choice-date__input first__input" placeholder="Время" type="text" name="time" id="time" required>
+                <label class="first__label" for="count"></label>
+                <input class="choice-date__input first__input" placeholder="Cколько человек" type="text" name="count" id="count" required>
+              </div>
 
-            <label for="count">Количество человек</label>
-            <input type="number" name="count" id="count" required>
-
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" required>
-            <label for="surname">Фамилия</label>
-            <input type="text" name="surname" id="surname" required>
-          
-            <label for="tel">Номер телефона</label>
-            <input type="tel" name="tel" id="tel" required>
-            
-            <input type="checkbox" name="age" id="age" value="age" required>
-            <label for="age">Я старше 18 лет</label>          
+              <div class="choice-date-columns__second second">
+                <label class="second__label" for="name">Имя</label>
+                <input class="choice-date__input" type="text" name="name" id="name" required>
+                <label class="second__label" for="surname">Фамилия</label>
+                <input class="choice-date__input" type="text" name="surname" id="surname" required>
+              </div>
+              
+              <div class="choice-date-columns__third third">
+                <label class="third__label" for="tel">Телефон</label>
+                <input class="choice-date__input" type="tel" name="tel" id="tel" required>
+                <label class="third__label" for="email">E-mail</label>
+                <input class="choice-date__input" type="email" name="email" id="email" required>
+              </div>
+            </div>
           </fieldset>
+
           <button class="form__btn" type="submit">Забронировать</button>
-          <input class="form__input" type="checkbox" name="accept" id="accept" value="accept" required>
-          <label for="accept">Я согласен на обработку данных</label>
         </form>
       </div>
     </section>
@@ -186,7 +213,7 @@
     <section class="about-us section" id="about-us">
       <div class="container">
         <h2 class="about-us__title title">О нас</h2>
-        <div class="about-us__container">
+        <div class="about-us__columns">
           <img class="about-us__image" src="img/about-us.jpg" alt="Коллаж фотографий наших услуг">
           <div class="about-us__text">
             <div class="about-us__advantages">
@@ -262,33 +289,39 @@
   <footer class="footer section" id="contacts">
     <div class="container">
       <h2 class="footer__title title">Контакты</h2>
-      <address class="footer__address address">
-        <p class="address__item address__item_type_location">г. Москва ул. <br> Аквамарина, 16</p>
-        <p class="address__item address__item_type_phone"><a href="tel:89509302893">8(950)930-28-93</a></p>
-        <p class="address__item address__item_type_email"><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
-      </address>
+      <div class="footer__columns">
+        <div class="left">
+          <address class="footer__address address">
+            <p class="address__item address__item_type_location">г. Москва ул. <br> Аквамарина, 16</p>
+            <p class="address__item address__item_type_phone"><a href="tel:89509302893">8(950)930-28-93</a></p>
+            <p class="address__item address__item_type_email"><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+          </address>
 
-      <ul class="footer__list social">
-        <li class="social__item">
-          <a class="social__link social__link_type_vkontakte" href="https://vk.com/" target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link_type_telegram" href="https://t.me" target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link_type_pinterest" href="https://t.me" target="_blank"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link_type_stumbleupon" href="https://t.me" target="_blank"></a>
-        </li>
-      </ul>
-
-      <img src="img/module3/map.png" alt="">
-
-
-      <p>© Game Over, 2022</p>
-      <p>Design by Anastasia Ilina</p>
-      <p>ilina9825@gmail.com</p>
+          <ul class="footer__list social">
+            <li class="social__item">
+              <a class="social__link social__link_type_vkontakte" href="https://vk.com/" target="_blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_type_telegram" href="https://t.me" target="_blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_type_pinterest" href="https://t.me" target="_blank"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_type_stumbleupon" href="https://t.me" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <img src="img/module3/map.png" alt="">
+      </div>
+      <div class="footer__info">
+        <p class="footer__text">© Game Over, 2022</p>
+        <p class="footer__text">
+          <span class="footer__design">Design by Anastasia Ilina</span>
+          <span class="footer__design">ilina9825@gmail.com</span>
+        </p>
+        
+      </div>
     </div>
   </footer>
   

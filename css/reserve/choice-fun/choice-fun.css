@@ -1,0 +1,32 @@
+.choice-fun-columns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+}
+
+.choice-fun__fieldset {
+  border: none;
+  flex-basis: 300px;
+}
+
+.choice-fun__fieldset:first-child {
+  flex-basis: 280px;
+}
+
+.choice-fun__legend {
+  margin-bottom: 24px;
+}
+
+.choice-fun__field {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 22px;
+  line-height: 1.136;
+}
+
+.choice-fun__input {
+  width: 25px;
+  height: 25px;
+}

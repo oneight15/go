@@ -1,15 +1,10 @@
-.about-us__title {
-  margin-bottom: 40px;
-}
-
-.about-us__container {
+.about-us__columns {
   display: flex;
   justify-content: space-between;
 }
 
 .about-us__image {
   max-width: 600px;
-
 }
 
 .about-us__text {
@@ -28,6 +23,10 @@
 
 .about-us__description:last-child {
   margin-bottom: 0;
+}
+
+.blockquote {
+  padding-left: 31px;
 }
 
 .blockquote__quote {

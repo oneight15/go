@@ -1,11 +1,15 @@
 @import url("normalize.css");
 @import url("global.css");
 @import url("header/header.css");
-@import url("navigation/navigation.css");
+@import url("header/navigation/navigation.css");
 @import url("hero/hero.css");
 @import url("advantages/advantages.css");
 @import url("rooms/rooms.css");
 @import url("reserve/reserve.css");
+@import url("reserve/form/form.css");
+@import url("reserve/choice-room/choice-room.css");
+@import url("reserve/choice-fun/choice-fun.css");
+@import url("reserve/choice-date/choice-date.css");
 @import url("about-us/about-us.css");
 @import url("feedback/feedback.css");
 @import url("feedback/card/card.css");

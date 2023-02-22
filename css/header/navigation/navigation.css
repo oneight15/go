@@ -1,0 +1,6 @@
+.navigation__list {
+  display: flex;
+  gap: 40px;
+  font-size: 22px;
+  line-height: 2.27;
+}

@@ -1,7 +1,7 @@
 .advantages__title {
-  margin: 0 auto;
   max-width: 880px;
-  margin-bottom: 41px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .advantages__list {

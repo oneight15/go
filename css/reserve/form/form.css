@@ -1,0 +1,28 @@
+.form {
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: end;
+}
+
+.form__legend {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form__fieldset {
+  margin-bottom: 60px;
+  border: none;
+}
+
+.form__btn {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  max-width: 300px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  color: #6C0287;
+  padding: 16px 52px;
+}
