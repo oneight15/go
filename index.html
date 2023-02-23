@@ -181,12 +181,17 @@
             <legend class="form__legend">Выбери дату и время</legend>
             <div class="choice-date-columns">
               <div class="choice-date-columns__first first">
-                <label class="first__label" for="date"></label>
-                <input class="choice-date__input first__input" placeholder="Дата" type="text" name="date" id="date" required>
-                <label class="first__label" for="time"></label>
-                <input class="choice-date__input first__input" placeholder="Время" type="text" name="time" id="time" required>
-                <label class="first__label" for="count"></label>
-                <input class="choice-date__input first__input" placeholder="Cколько человек" type="text" name="count" id="count" required>
+                <div class="first__row">
+                  <label class="first__label">
+                    <input class="choice-date__input first__input" placeholder="Дата" type="text" name="date" required>
+                  </label>  
+                  <label class="first__label">
+                    <input class="choice-date__input first__input" placeholder="Время" type="text" name="time" required>
+                  </label>
+                </div>
+                <label class="first__label">
+                  <input class="choice-date__input" placeholder="Cколько человек" type="text" name="count" required>
+                </label>
               </div>
 
               <div class="choice-date-columns__second second">
