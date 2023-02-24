@@ -4,3 +4,13 @@
   font-size: 22px;
   line-height: 2.27;
 }
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #CD06FF;
+}
+
+.navigation__link:active {
+  color: #640AA3;
+}
+

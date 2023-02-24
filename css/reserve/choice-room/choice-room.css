@@ -4,7 +4,7 @@
 }
 
 .choice-room__label {
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   border-radius: 8px;
   width: 250px;
   height: 55px;
@@ -14,6 +14,28 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  padding: 7px 15px 8px;
+  padding: 4px 15px 5px;
   cursor: pointer;
+  border: 3px solid #FFFFFF;
+}
+
+.choice-room__input:focus:before {
+  background-color: #ffffff;
+  border-color: #6C0287;
+}
+
+.choice-room__label:hover {
+  background-color: #EADEED;
+  border-color: #640AA3;
+}
+
+.choice-room__label:focus {
+  background-color: #ffffff;
+  border-color: #6C0287;
+}
+
+.choice-room__label:active {
+  background-color: #6C0287;
+  border-color: #ffffff;
+  color: #ffffff;
 }

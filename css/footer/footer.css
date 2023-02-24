@@ -49,25 +49,20 @@
   vertical-align: middle;
   width: 50px;
   height: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.social__link_type_vkontakte {
-  background-image: url("../../img/lesson8/vkontakte.svg");
-  
+.social__link:hover {
+  color: #EADEED;
 }
 
-.social__link_type_telegram {
-  background-image: url("../../img/lesson8/telegram.svg");
+.social__link:focus {
+  color: #EADEED;
+  border: 1px solid #CD06FF;
 }
 
-.social__link_type_pinterest {
-  background-image: url("../../img/lesson8/pinterest.svg");
-}
-
-.social__link_type_stumbleupon {
-  background-image: url("../../img/lesson8/stumbleupon.svg");
+.social__link:active {
+  color: #CD06FF;
+  border: none;
 }
 
 .footer__info {

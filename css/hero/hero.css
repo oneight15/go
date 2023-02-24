@@ -91,12 +91,47 @@
   z-index: -1;
 }
 
+.hero__link:hover,
+.hero__link:focus {
+  background-color: #840AA3;
+  outline: none;
+}
+
+.hero__link:active {
+  background-color: #640AA3;  
+}
+
 .hero__btn-down {
   display: block;
   width: 97px;
   height: 97px;
+  border-radius: 50%;
   position: absolute;
   left: 569px;
   bottom: 90px;
   z-index: 3;
 }
+
+.hero__btn-down:hover {
+  background-color: #ffffff;
+}
+
+.hero__btn-down:hover .rect {
+  fill: #CD06FF;
+}
+
+.hero__btn-down:focus {
+  outline: 1px solid #CD06FF;
+  border-radius: 0;
+}
+
+.hero__btn-down:active {
+  background-color: #CD06FF;
+  border-color: #CD06FF;
+  border-radius: 50%;
+}
+
+.hero__btn-down:active .rect {
+  fill: #ffffff;
+}
+

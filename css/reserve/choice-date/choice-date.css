@@ -31,6 +31,10 @@
   width: 100%;
 }
 
+.choice-date__input:focus {
+  outline: 2px solid #CD06FF;
+}
+
 input::-webkit-input-placeholder {
   color: #000;
 }

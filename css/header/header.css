@@ -15,7 +15,7 @@
   border-radius: 10px;
   max-width: 286px;
   height: 55px;
-  padding: 12px 32px 13px;
+  padding: 9px 32px 10px;
   color: inherit;
   text-transform: inherit;
   font-weight: 700;
@@ -23,3 +23,17 @@
   line-height: 1.36;
   white-space: nowrap;
 }
+
+.header__btn:hover,
+.header__btn:focus {
+  background-color: #6C0287;
+  border-color: #6C0287;
+  color: #ffffff;
+}
+
+.header__btn:active {
+  background-color: #640AA3;
+  border-color: #640AA3;
+  color: #ffffff;
+}
+
