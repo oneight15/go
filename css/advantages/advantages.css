@@ -12,12 +12,11 @@
 
 .advantages__item {
   flex-basis: 380px;
-  height: 228px;
+  min-height: 228px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.4;
-  padding-top: 166px;
-  padding-left: 40px;
+  padding: 166px 40px 6px;
 }
 
 .advantages__item_type_vr {

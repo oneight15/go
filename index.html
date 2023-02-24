@@ -17,7 +17,7 @@
 <body>
   <header class="header">
     <div class="container header__container">
-      <img class="header__logo" src="img/module3/logo.svg" alt="Логотип сайта Game Over">
+      <a href="/index.html"><img class="header__logo" src="img/module3/logo.svg" alt="Логотип сайта Game Over"></a>
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
@@ -37,7 +37,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__btn">Заказать звонок</button>
+      <button class="header__btn" type="button">Заказать звонок</button>
     </div>
   </header>
   <main>
@@ -50,30 +50,37 @@
           <p class="hero__text"><span class="hero__new">new </span>Новейшая аппаратура</p>
         </div>
         <a class="hero__link" href="#reserve">Забронировать</a>
+        <a class="hero__btn-down" href="#advantages">
+          <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+          </svg>
+        </a>
       </div>
     </section>
 
-    <section class="advantages section">
+    <section class="advantages section" id="advantages">
       <div class="container">
         <h2 class="advantages__title title">У нас есть все для классного отдыха с друзьями!</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item_type_vr">
-            <p>VR очки</p>
+            VR очки
           </li>
           <li class="advantages__item advantages__item_type_audio">
-            <p>Аудио-система 5.1 с отличным звуком</p>
+            Аудио-система 5.1 с&nbsp;отличным звуком
           </li>
           <li class="advantages__item advantages__item_type_micro">
-            <p>Караоке (4 микрофона)</p>
+            Караоке (4 микрофона)
           </li>
           <li class="advantages__item advantages__item_type_game">
-            <p>Настольные игры</p>
+            Настольные игры
           </li>
           <li class="advantages__item advantages__item_type_netflix">
-            <p>Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+            Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko
           </li>
           <li class="advantages__item advantages__item_type_sony">
-            <p>РlаyStаtiоn 5</p>
+            РlаyStаtiоn 5
           </li>
         </ul>
       </div>
@@ -109,13 +116,13 @@
           <fieldset class="form__fieldset choice-room">
             <legend class="form__legend">Выбери зал</legend>
             <div class="choice-room__btns">
-              <input class="choice-room__input" type="radio" name="room" value="80's-vibes" id="room1">
+              <input class="choice-room__input visually-hidden" type="radio" name="room" value="80's-vibes" id="room1">
               <label class="choice-room__label" for="room1">80's vibes</label>
-              <input class="choice-room__input" type="radio" name="room" value="star-wars" id="room2">
+              <input class="choice-room__input visually-hidden" type="radio" name="room" value="star-wars" id="room2">
               <label class="choice-room__label" for="room2">Star wars</label>
-              <input class="choice-room__input" type="radio" name="room" value="wild-west" id="room3">
+              <input class="choice-room__input visually-hidden" type="radio" name="room" value="wild-west" id="room3">
               <label class="choice-room__label" for="room3">Wild west</label>
-              <input class="choice-room__input" type="radio" name="room" value="neon-style" id="room4">
+              <input class="choice-room__input visually-hidden" type="radio" name="room" value="neon-style" id="room4">
               <label class="choice-room__label" for="room4">Neon style</label>      
             </div>
           </fieldset>

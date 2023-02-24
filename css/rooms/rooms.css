@@ -9,21 +9,19 @@
 }
 
 .rooms__item {
-  min-height: 349px;
   flex-basis: 580px;
+  min-height: 349px;
   text-align: center;
-  padding-top: 135px;
-  padding-bottom: 134px;
   background-size: cover;
 }
 
 .rooms__link {
   display: inline-block;
-  max-width: 252px;
   font-size: 70px;
   line-height: 1.15;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 94px 164px 95px;
 }
 
 .rooms__item_type_vibes {

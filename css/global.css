@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -29,6 +30,11 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
+  cursor: pointer;
+}
+
+input,
+label {
   cursor: pointer;
 }
 
