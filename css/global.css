@@ -26,6 +26,10 @@ img, svg {
   height: auto;
 }
 
+svg {
+  vertical-align: bottom;
+}
+
 button {
   background-color: transparent;
   border: none;

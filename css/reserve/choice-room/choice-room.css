@@ -30,6 +30,7 @@
 }
 
 .choice-room__label:focus {
+  outline: none;
   background-color: #ffffff;
   border-color: #6C0287;
 }
