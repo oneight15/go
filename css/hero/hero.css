@@ -107,7 +107,8 @@
   height: 97px;
   border-radius: 50%;
   position: absolute;
-  left: 569px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 90px;
   z-index: 3;
 }
