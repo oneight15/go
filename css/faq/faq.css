@@ -34,6 +34,8 @@
 
 .faq__btn {
   border-radius: 50%;
+  transition-duration: 0.5s;
+  transition-property: background-color, stroke;
 }
 
 .faq__item:nth-child(odd) .faq__btn {

@@ -17,6 +17,13 @@
   font-size: 20px;
   line-height: 1.4;
   padding: 166px 40px 6px;
+  transition-duration: 0.7s;
+  transition-property: transform;
+  cursor: pointer;
+}
+
+.advantages__item:hover {
+  transform: scale(110%);
 }
 
 .advantages__item_type_vr {

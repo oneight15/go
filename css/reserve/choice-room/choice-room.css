@@ -17,12 +17,14 @@
   padding: 4px 15px 5px;
   cursor: pointer;
   border: 3px solid #FFFFFF;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color, outline, color;
 }
 
-.choice-room__input:focus:before {
+/* .choice-room__input:focus:before {
   background-color: #ffffff;
   border-color: #6C0287;
-}
+} */
 
 .choice-room__label:hover {
   background-color: #EADEED;

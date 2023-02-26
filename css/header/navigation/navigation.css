@@ -5,6 +5,11 @@
   line-height: 2.27;
 }
 
+.navigation__link {
+  transition-duration: 0.5s;
+  transition-property: color;
+}
+
 .navigation__link:hover,
 .navigation__link:focus {
   color: #CD06FF;

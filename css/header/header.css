@@ -22,6 +22,8 @@
   font-size: 22px;
   line-height: 1.36;
   white-space: nowrap;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color, color;
 }
 
 .header__btn:hover,
