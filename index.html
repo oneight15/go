@@ -189,15 +189,15 @@
             <div class="choice-date-columns">
               <div class="choice-date-columns__first first">
                 <div class="first__row">
-                  <label class="first__label">
-                    <input class="choice-date__input first__input" placeholder="Дата" type="text" name="date" required>
+                  <label class="first__label-date">
+                    <input class="choice-date__input first__input-date" placeholder="Дата" type="date" name="date" required>
                   </label>  
-                  <label class="first__label">
-                    <input class="choice-date__input first__input" placeholder="Время" type="text" name="time" required>
+                  <label class="first__label-time">
+                    <input class="choice-date__input first__input-time" placeholder="Время" type="time" name="time" required>
                   </label>
                 </div>
                 <label class="first__label">
-                  <input class="choice-date__input" placeholder="Cколько человек" type="text" name="count" required>
+                  <input class="choice-date__input" placeholder="Cколько человек" type="number" name="count" required>
                 </label>
               </div>
 
@@ -326,6 +326,7 @@
                 <path class="path" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor"/>
                 <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor"/>
               </svg>
+            </button>
           </li>
         </ul>
       </div>
@@ -339,8 +340,8 @@
         <div class="left">
           <address class="footer__address address">
             <p class="address__item address__item_type_location">г. Москва ул. <br> Аквамарина, 16</p>
-            <p class="address__item address__item_type_phone"><a href="tel:89509302893">8(950)930-28-93</a></p>
-            <p class="address__item address__item_type_email"><a href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
+            <p class="address__item address__item_type_phone"><a class="footer__link" href="tel:89509302893">8(950)930-28-93</a></p>
+            <p class="address__item address__item_type_email"><a class="footer__link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
           </address>
 
           <ul class="footer__list social">
@@ -381,7 +382,7 @@
         <p class="footer__text">© Game Over, 2022</p>
         <p class="footer__text">
           <span class="footer__design">Design by Anastasia Ilina</span>
-          <span class="footer__design">ilina9825@gmail.com</span>
+          <span class="footer__design"><a class="footer__link" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></span>
         </p>
         
       </div>

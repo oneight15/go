@@ -84,5 +84,14 @@
   margin-bottom: 6px;
 }
 
+.footer__link:hover,
+.footer__link:focus {
+  color: #CD06FF;
+}
+
+.footer__link:active {
+  color: #640AA3;
+}
+
 
 

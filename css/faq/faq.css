@@ -16,6 +16,7 @@
   font-weight: 700;
   padding: 22px 70px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .faq__item:nth-child(odd) {
@@ -44,21 +45,21 @@
   color: #fff;
 }
 
-.faq__item:nth-child(odd) .faq__btn:hover {
+.faq__item:nth-child(odd):hover .faq__btn {
   background-color: #440F51;
   stroke: #fff;
 }
 
-.faq__item:nth-child(even) .faq__btn:hover {
+.faq__item:nth-child(even):hover .faq__btn {
   background-color: #fff;
   stroke: #440F51;
 }
 
-.faq__item:nth-child(odd) .faq__btn:active .path {
+.faq__item:nth-child(odd):active .faq__btn .path {
   stroke: #440F51;
 }
 
-.faq__item:nth-child(even) .faq__btn:active .path {
+.faq__item:nth-child(even):active .faq__btn .path {
   stroke: #fff;
 }
 

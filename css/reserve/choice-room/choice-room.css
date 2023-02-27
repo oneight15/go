@@ -40,3 +40,9 @@
   border-color: #ffffff;
   color: #ffffff;
 }
+
+.choice-room__input:checked + .choice-room__label {
+  background-image: linear-gradient(to right top, #6C0287, #1a3b61);
+  border-color: #000;
+  color: #ffffff;
+}

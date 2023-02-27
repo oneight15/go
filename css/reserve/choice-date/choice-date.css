@@ -9,7 +9,7 @@
   flex-basis: 300px;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 27px;
   justify-content: flex-end;
 }
 
@@ -26,7 +26,6 @@
   font-size: 18px;
   line-height: 1.55;
   padding: 12px;
-  color: #ffffff;
   border: none;
   width: 100%;
 }
@@ -42,25 +41,15 @@ input::-webkit-input-placeholder {
 .first__row {
   display: flex;
   justify-content: space-between;
+  gap: 32px;
 }
 
-.first__input {
+.first__label-date {
   max-width: 134px;
 }
 
-.first__label {
-  position: relative;
-}
-
-.first__label::after {
-  content: "";
-  position: absolute;
-  width: 21px;
-  height: 15px;
-  background-image: url("../../../img/dropdown.svg");
-  background-repeat: no-repeat;
-  right: 27px;
-  top: 40%;
+.first__label-time {
+  flex-basis: 134px;
 }
 
 .second__label,
@@ -69,3 +58,4 @@ input::-webkit-input-placeholder {
   line-height: 1.14;
   font-weight: 700;
 }
+
