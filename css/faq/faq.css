@@ -35,6 +35,13 @@
 
 .faq__btn {
   border-radius: 50%;
+  transition-duration: 0.5s;
+  transition-property: background-color;
+}
+
+.faq__btn .path {
+  transition-duration: 0.5s;
+  transition-property: stroke;
 }
 
 .faq__item:nth-child(odd) .faq__btn {

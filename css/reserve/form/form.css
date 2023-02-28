@@ -27,6 +27,8 @@
   padding: 13px 50px;
   margin-right: 100px;
   border: 3px solid #ffffff;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color;
 }
 
 .form__btn:hover {

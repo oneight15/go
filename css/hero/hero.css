@@ -79,6 +79,8 @@
   font-size: 26px;
   line-height: 1.15;
   text-transform: uppercase;
+  transition-duration: 0.5s;
+  transition-property: background-color, outline;
 }
 
 .hero__link::before {
@@ -111,6 +113,8 @@
   transform: translateX(-50%);
   bottom: 90px;
   z-index: 3;
+  transition-duration: 0.5s;
+  transition-property: background-color, outline, fill, border-color;
 }
 
 .hero__btn-down:hover {
