@@ -43,7 +43,7 @@
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--purple-color, #6c0287);
   position: absolute;
   right: 479px;
 }
@@ -54,7 +54,7 @@
   font-size: 44px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--purple-color, #6c0287);
 }
 
 .blockquote__creator {

@@ -15,7 +15,7 @@
 }
 
 .form__btn {
-  background-color: #FFFFFF;
+  background-color: var(--main-color, #ffffff);
   border-radius: 10px;
   max-width: 300px;
   height: 60px;
@@ -23,25 +23,25 @@
   font-size: 22px;
   line-height: 1.27;
   text-transform: uppercase;
-  color: #6C0287;
+  color: var(--purple-color, #6c0287);
   padding: 13px 50px;
   margin-right: 100px;
-  border: 3px solid #ffffff;
+  border: 3px solid var(--main-color, #ffffff);
   transition-duration: 0.5s;
   transition-property: background-color, border-color;
 }
 
 .form__btn:hover {
-  background-color: #EADEED;
-  border-color: #6C0287;
+  background-color: var(--decor-color, #eadeed);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .form__btn:focus {
-  background-color: #ffffff;
-  border-color: #6C0287;
+  background-color: var(--main-color, #ffffff);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .form__btn:active {
-  background-color: #EADEED;
-  border-color: #EADEED;
+  background-color: var(--decor-color, #eadeed);
+  border-color: var(--decor-color, #eadeed);
 }

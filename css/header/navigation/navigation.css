@@ -12,10 +12,10 @@
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #CD06FF;
+  color: var(--second-color, #cd06ff);
 }
 
 .navigation__link:active {
-  color: #640AA3;
+  color: var(--second-purple, #640aa3);
 }
 

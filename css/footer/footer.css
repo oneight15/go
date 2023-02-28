@@ -54,16 +54,16 @@
 }
 
 .social__link:hover {
-  color: #EADEED;
+  color: var(--decor-color, #eadeed);
 }
 
 .social__link:focus {
-  color: #EADEED;
-  border: 1px solid #CD06FF;
+  color: var(--decor-color, #eadeed);
+  border: 1px solid var(--second-color, #cd06ff);
 }
 
 .social__link:active {
-  color: #CD06FF;
+  color: var(--second-color, #cd06ff);
   border: none;
 }
 
@@ -93,11 +93,11 @@
 
 .footer__link:hover,
 .footer__link:focus {
-  color: #CD06FF;
+  color: var(--second-color, #cd06ff);
 }
 
 .footer__link:active {
-  color: #640AA3;
+  color: var(--second-purple, #640aa3);
 }
 
 

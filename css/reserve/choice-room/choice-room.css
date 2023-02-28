@@ -4,7 +4,7 @@
 }
 
 .choice-room__label {
-  background-color: #FFFFFF;
+  background-color: var(--main-color, #ffffff);
   border-radius: 8px;
   width: 250px;
   height: 55px;
@@ -16,35 +16,35 @@
   color: #000000;
   padding: 4px 15px 5px;
   cursor: pointer;
-  border: 3px solid #FFFFFF;
+  border: 3px solid var(--main-color, #ffffff);
   transition-duration: 0.5s;
   transition-property: background-color, border-color, outline, color;
 }
 
 .choice-room__input:focus:before {
-  background-color: #ffffff;
-  border-color: #6C0287;
+  background-color: var(--main-color, #ffffff);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .choice-room__label:hover {
-  background-color: #EADEED;
-  border-color: #640AA3;
+  background-color: var(--decor-color, #eadeed);
+  border-color: var(--second-purple, #640aa3);
 }
 
 .choice-room__label:focus {
   outline: none;
-  background-color: #ffffff;
-  border-color: #6C0287;
+  background-color: var(--main-color, #ffffff);
+  border-color: var(--purple-color, #6c0287);
 }
 
 .choice-room__label:active {
-  background-color: #6C0287;
-  border-color: #ffffff;
-  color: #ffffff;
+  background-color: var(--purple-color, #6c0287);
+  border-color: var(--main-color, #ffffff);
+  color: var(--main-color, #ffffff);
 }
 
 .choice-room__input:checked + .choice-room__label {
-  background-image: linear-gradient(to right top, #6C0287, #1a3b61);
+  background-image: linear-gradient(to right top, var(--purple-color, #6c0287), #1a3b61);
   border-color: #000;
-  color: #ffffff;
+  color: var(--main-color, #ffffff);
 }

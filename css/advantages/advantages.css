@@ -1,3 +1,7 @@
+.advantages {
+  padding-bottom: 120px;
+}
+
 .advantages__title {
   max-width: 880px;
   margin-left: auto;
@@ -24,6 +28,14 @@
 
 .advantages__item:hover {
   transform: scale(110%);
+}
+
+.advantages__item:nth-child(3n + 2) {
+  transform: translateY(70px);
+}
+
+.advantages__item:nth-child(3n + 2):hover {
+  transform: scale(110%) translateY(60px);
 }
 
 .advantages__item_type_vr {

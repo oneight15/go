@@ -56,7 +56,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 1.41;
-  color: #CD06FF;
+  color: var(--second-color, #cd06ff);
 }
 
 .hero__new {
@@ -64,7 +64,7 @@
   font-size: 75px;
   line-height: 1.41;
   font-variant: all-small-caps;
-  color: #CD06FF;
+  color: var(--second-color, #cd06ff);
 }
 
 .hero__link {
@@ -72,7 +72,7 @@
   display: inline-block;
   width: 374px;
   height: 80px;
-  background-color: #6C0287;
+  background-color: var(--purple-color, #6c0287);
   border-radius: 10px;
   padding: 25px 69px;
   font-weight: 700;
@@ -87,7 +87,7 @@
   content: "";
   position: absolute;
   display: block;
-  background-color: #6C0287;
+  background-color: var(--purple-color, #6c0287);
   filter: blur(10px);
   inset: 0;
   z-index: -1;
@@ -100,7 +100,7 @@
 }
 
 .hero__link:active {
-  background-color: #640AA3;  
+  background-color: var(--second-purple, #640aa3);  
 }
 
 .hero__btn-down {
@@ -118,25 +118,25 @@
 }
 
 .hero__btn-down:hover {
-  background-color: #ffffff;
+  background-color: var(--main-color, #ffffff);
 }
 
 .hero__btn-down:hover .rect {
-  fill: #CD06FF;
+  fill: var(--second-color, #cd06ff);
 }
 
 .hero__btn-down:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--second-color, #cd06ff);
   border-radius: 0;
 }
 
 .hero__btn-down:active {
-  background-color: #CD06FF;
-  border-color: #CD06FF;
+  background-color: var(--second-color, #cd06ff);
+  border-color: var(--second-color, #cd06ff);
   border-radius: 50%;
 }
 
 .hero__btn-down:active .rect {
-  fill: #ffffff;
+  fill: var(--main-color, #ffffff);
 }
 

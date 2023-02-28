@@ -11,7 +11,7 @@
 }
 
 .header__btn {
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--second-color, #cd06ff);
   border-radius: 10px;
   max-width: 286px;
   height: 55px;
@@ -28,14 +28,14 @@
 
 .header__btn:hover,
 .header__btn:focus {
-  background-color: #6C0287;
-  border-color: #6C0287;
-  color: #ffffff;
+  background-color: var(--purple-color, #6c0287);
+  border-color: var(--purple-color, #6c0287);
+  color: var(--main-color, #ffffff);
 }
 
 .header__btn:active {
-  background-color: #640AA3;
-  border-color: #640AA3;
-  color: #ffffff;
+  background-color: var(--second-purple, #640aa3);
+  border-color: var(--second-purple, #640aa3);
+  color: var(--main-color, #ffffff);
 }
 

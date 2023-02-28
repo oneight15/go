@@ -34,5 +34,5 @@
 }
 
 .choice-fun__input:focus {
-  outline: 2px solid #CD06FF;
+  outline: 2px solid var(--second-color, #cd06ff);
 }

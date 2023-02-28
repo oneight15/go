@@ -20,13 +20,13 @@
 }
 
 .faq__item:nth-child(odd) {
-  background-color: #fff;
+  background-color: var(--main-color, #ffffff);
   color: #1C1A1A;
 }
 
 .faq__item:nth-child(even) {
-  background-color: #440F51;
-  color: #fff;
+  background-color: var(--second-bg-color, #440f51);
+  color: var(--main-color, #ffffff);
 }
 
 .faq__item:last-child {
@@ -45,29 +45,29 @@
 }
 
 .faq__item:nth-child(odd) .faq__btn {
-  color: #440F51;
+  color: var(--second-bg-color, #440f51);
 }
 
 .faq__item:nth-child(even) .faq__btn {
-  color: #fff;
+  color: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(odd):hover .faq__btn {
-  background-color: #440F51;
-  stroke: #fff;
+  background-color: var(--second-bg-color, #440f51);
+  stroke: var(--main-color, #ffffff);
 }
 
 .faq__item:nth-child(even):hover .faq__btn {
-  background-color: #fff;
-  stroke: #440F51;
+  background-color: var(--main-color, #ffffff);
+  stroke: var(--second-bg-color, #440f51);
 }
 
 .faq__item:nth-child(odd):active .faq__btn .path {
-  stroke: #440F51;
+  stroke: var(--second-bg-color, #440f51);
 }
 
 .faq__item:nth-child(even):active .faq__btn .path {
-  stroke: #fff;
+  stroke: var(--main-color, #ffffff);
 }
 
 
