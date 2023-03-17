@@ -28,6 +28,7 @@ img, svg {
 
 svg {
   vertical-align: bottom;
+  font-size: 0;
 }
 
 button {
