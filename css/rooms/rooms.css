@@ -2,40 +2,44 @@
   padding-bottom: 100px;
 }
 
+.rooms__title {
+  margin-bottom: 45px;
+}
+
 .rooms__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 349px);
   gap: 20px;
 }
 
 .rooms__item {
-  flex-basis: 580px;
-  min-height: 349px;
   text-align: center;
   background-size: cover;
 }
 
 .rooms__link {
   display: inline-block;
+  max-width: 270px;
   font-size: 70px;
   line-height: 1.15;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 94px 164px 95px;
+  padding: 94px 0 95px;
 }
 
 .rooms__item_type_vibes {
-  background-image: url("../../img/lesson8/vibes.jpg");
+  background-image: url("../../img/rooms/vibes.jpg");
 }
 
 .rooms__item_type_star-wars {
-  background-image: url("../../img/lesson8/star-wars.jpg");
+  background-image: url("../../img/rooms/star-wars.jpg");
 }
 
 .rooms__item_type_wild-west {
-  background-image: url("../../img/lesson8/wild-west.jpg");
+  background-image: url("../../img/rooms/wild-west.jpg");
 }
 
 .rooms__item_type_neon-style {
-  background-image: url("../../img/lesson8/neon-style.jpg");
+  background-image: url("../../img/rooms/neon-style.jpg");
 }

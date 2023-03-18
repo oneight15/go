@@ -15,15 +15,20 @@
 
 .choice-fun__legend {
   margin-bottom: 24px;
+  letter-spacing: 1px;
 }
 
 .choice-fun__field {
   display: flex;
   gap: 12px;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   font-size: 22px;
   line-height: 1.136;
+}
+
+.choice-fun__field:last-child {
+  margin-bottom: 0;
 }
 
 .choice-fun__input {
@@ -31,6 +36,11 @@
   height: 25px;
   transition-duration: 0.5s;
   transition-property: outline;
+}
+
+.choice-fun__input_type_radio {
+  width: 27px;
+  height: 27px;
 }
 
 .choice-fun__input:focus {

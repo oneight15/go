@@ -1,5 +1,9 @@
+.feedback {
+  padding-top: 45px;
+}
+
 .feedback__title {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
 }
 
 .feedback__list {

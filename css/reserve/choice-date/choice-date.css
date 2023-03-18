@@ -1,7 +1,14 @@
+.choice-date {
+  margin-bottom: 40px;
+}
+
 .choice-date-columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px 280px 300px;
+  grid-template-rows: 1fr;
   gap: 50px;
   justify-content: center;
+  align-items: center;
   text-align: start;
 }
 
@@ -25,7 +32,7 @@
   display: block;
   font-size: 18px;
   line-height: 1.55;
-  padding: 12px;
+  padding: 12px 20px;
   border: none;
   width: 100%;
   transition-duration: 0.5s;
@@ -40,24 +47,38 @@ input::-webkit-input-placeholder {
   color: #000;
 }
 
-.first__row {
-  display: flex;
-  justify-content: space-between;
-  gap: 32px;
+.first {
+  align-self: end;
+  display: grid;
+  grid-template-columns: repeat(2, 134px);
+  grid-template-rows: repeat(2, 52px);
+  gap: 36px 32px;
+  grid-template-areas: 
+  "date time"
+  "count count";
+}
+
+.first__label {
+  grid-area: count;
 }
 
 .first__label-date {
-  max-width: 134px;
+  grid-area: date;
 }
 
 .first__label-time {
-  flex-basis: 134px;
+  grid-area: time;
 }
 
 .second__label,
 .third__label {
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
+  margin-bottom: 6px;
 }
 
+.choice-date__input_row_start {
+  margin-bottom: 14px;
+}

@@ -4,9 +4,9 @@
 }
 
 .card__image {
-  width: 280px;
+  max-width: 280px;
   height: 280px;
-  margin-bottom: 11px;
+  margin-bottom: 5px;
 }
 
 .card__figure {

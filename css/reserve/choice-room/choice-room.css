@@ -1,6 +1,7 @@
 .choice-room__btns {
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 .choice-room__label {

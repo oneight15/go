@@ -1,12 +1,17 @@
 .footer {
-  padding-bottom: 10px;
+  padding-bottom: 21px;
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);;
+}
+
+.footer__title {
+  margin-bottom: 46px;
 }
 
 .footer__columns {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 156px;
+  margin-bottom: 139px;
+  gap: 20px;
 }
 
 .footer__address {
@@ -18,7 +23,7 @@
 }
 
 .address__item {
-  padding-left: 66px;
+  padding-left: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
@@ -26,22 +31,22 @@
 }
 
 .address__item_type_location {
-  margin-bottom: 38px;
-  background-image: url("../../img/lesson8/location.svg");
+  margin-bottom: 45px;
+  background-image: url("../../img/footer/location.svg");
 }
 
 .address__item_type_phone {
   margin-bottom: 11px;
-  background-image: url("../../img/lesson8/phone-call.svg");
+  background-image: url("../../img/footer/phone-call.svg");
 }
 
 .address__item_type_email {
-  background-image: url("../../img/lesson8/email.svg");
+  background-image: url("../../img/footer/email.svg");
 }
 
 .footer__list {
   display: flex;
-  gap: 27px;
+  gap: 26px;
 }
 
 .social__link {
@@ -65,6 +70,10 @@
 .social__link:active {
   color: var(--second-color, #cd06ff);
   border: none;
+}
+
+.right {
+  max-width: 680px;
 }
 
 .footer__info {
