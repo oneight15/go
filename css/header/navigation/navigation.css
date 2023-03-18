@@ -19,3 +19,18 @@
   color: var(--second-purple, #640aa3);
 }
 
+@media (max-width: 1100px) {
+  .navigation__list {
+    gap: 20px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+}
+
+@media (max-width: 830px) {
+  .navigation__list {
+    display: none;
+  }
+}
+
+

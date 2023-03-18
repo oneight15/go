@@ -14,6 +14,7 @@
   height: 762px;
   background-image: url("../../img/hero/man-vr.png");
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   right: 30px;
   bottom: 0;
@@ -70,8 +71,8 @@
 .hero__link {
   position: relative;
   display: inline-block;
-  width: 374px;
-  height: 80px;
+  min-width: 374px; /* было просто width */
+  /* height: 80px; */
   background-color: var(--purple-color, #6c0287);
   border-radius: 10px;
   padding: 25px 69px;
@@ -81,6 +82,7 @@
   text-transform: uppercase;
   transition-duration: 0.5s;
   transition-property: background-color, outline;
+  z-index: 5;
 }
 
 .hero__link::before {
@@ -139,4 +141,205 @@
 .hero__btn-down:active .rect {
   fill: var(--main-color, #ffffff);
 }
+
+@media (max-width: 1100px) {
+  .hero__container {
+    min-height: 583px;
+  }
+
+  .hero__container::after {
+    max-width: 453px;
+    height: 520px;
+  }
+
+  .hero__title {
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+
+  .hero__description {
+    font-size: 22px;
+    line-height: calc(30 / 22);
+  }
+
+  .hero__advantages {
+    margin-bottom: 80px;
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+  
+  .hero__text:first-child {
+    max-width: 168px;
+  }
+  
+  .hero__text:last-child {
+    max-width: 140px;
+  }
+  
+  .hero__four {
+    font-size: 80px;
+    line-height: calc(113 / 80);
+  }
+  
+  .hero__new {
+    font-size: 60px;
+    line-height: calc(85 / 60);
+  }
+
+  .hero__link-wrapper {
+    padding-left: 39px;
+  }
+
+  .hero__link {
+    min-width: 296px;
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: calc(30 / 22);
+  }
+
+  .hero__btn-down {
+    width: 67px;
+    height: 67px;
+    bottom: 50px;
+  }
+}
+
+
+
+@media (max-width: 830px) {
+  .hero__container {
+    min-height: 537px;
+  }
+
+  .hero__container::after {
+    width: 409px;
+    height: 479px;
+  }
+
+  .hero__title {
+    font-size: 86px;
+  }
+
+  .hero__description {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+  }
+
+  .hero__advantages {
+    margin-bottom: 100px;
+    font-size: 16px;
+    line-height: calc(18 / 16);
+  }
+  
+  .hero__text:first-child {
+    max-width: 103px;
+  }
+  
+  .hero__text:last-child {
+    max-width: 89px;
+  }
+  
+  .hero__four {
+    font-size: 50px;
+    line-height: calc(71 / 50);
+  }
+  
+  .hero__new {
+    font-size: 40px;
+    line-height: calc(56 / 40);
+  }
+
+  .hero__link-wrapper {
+    padding-left: 0;
+  }
+
+  .hero__link {
+    min-width: 214px;
+    padding: 11px 35px;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    border-radius: 4px;
+  }
+
+  .hero__btn-down {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 630px) {
+  .hero__container::after {
+    width: 300px;
+  }
+
+  .hero__title {
+    font-size: 72px;
+  }
+
+  .hero__description {
+    padding-left: 50px;
+  }
+
+  .hero__advantages {
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 500px) {
+  .hero__container {
+    min-height: 204px;
+  }
+
+  .hero__container::after {
+    width: 161px;
+    height: 179px;
+  }
+
+  .hero__title {
+    font-size: 35px;
+    margin-bottom: 6px;
+  }
+
+  .hero__description {
+    font-size: 10px;
+    line-height: calc(14 / 10);
+    margin-bottom: 10px;
+  }
+
+  .hero__advantages {
+    margin-bottom: 30px;
+    font-size: 10px;
+    line-height: 1.1;
+  }
+  
+  .hero__text:first-child {
+    max-width: 65px;
+  }
+  
+  .hero__text:last-child {
+    max-width: 54px;
+  }
+  
+  .hero__four {
+    font-size: 26px;
+    line-height: calc(37 / 26);
+  }
+  
+  .hero__new {
+    font-size: 22px;
+    line-height: calc(31 / 22);
+  }
+
+  .hero__link {
+    min-width: 117px;
+    padding: 8px 13px 7px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+
 
