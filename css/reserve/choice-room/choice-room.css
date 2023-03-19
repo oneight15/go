@@ -7,8 +7,8 @@
 .choice-room__label {
   background-color: var(--main-color, #ffffff);
   border-radius: 8px;
-  width: 250px;
-  height: 55px;
+  min-width: 250px; /* заменить на min-width */
+  /* height: 55px; */
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33;
@@ -49,3 +49,37 @@
   border-color: #000;
   color: var(--main-color, #ffffff);
 }
+
+@media (max-width: 1100px) {
+  .choice-room__label {
+    border-radius: 6px;
+    min-width: 180px;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 830px) {
+  .choice-room__label {
+    min-width: 150px;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    padding: 9px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .choice-room__btns {
+    flex-wrap: wrap;
+  }
+
+  .choice-room__label {
+    border-radius: 4px;
+    min-width: 130px;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    padding: 6px 20px;
+  }
+}
+

@@ -4,28 +4,13 @@
 
 .choice-date-columns {
   display: grid;
-  grid-template-columns: 300px 280px 300px;
+  grid-template-columns: 300px minmax(240px, 280px) minmax(240px, 300px);
   grid-template-rows: 1fr;
+  grid-template-areas: "first second third";
   gap: 50px;
   justify-content: center;
   align-items: center;
   text-align: start;
-}
-
-.choice-date-columns__first {
-  flex-basis: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  justify-content: flex-end;
-}
-
-.choice-date-columns__second {
-  flex-basis: 280px;
-}
-
-.choice-date-columns__third {
-  flex-basis: 300px;
 }
 
 .choice-date__input {
@@ -48,6 +33,7 @@ input::-webkit-input-placeholder {
 }
 
 .first {
+  grid-area: first;
   align-self: end;
   display: grid;
   grid-template-columns: repeat(2, 134px);
@@ -56,6 +42,14 @@ input::-webkit-input-placeholder {
   grid-template-areas: 
   "date time"
   "count count";
+}
+
+.second {
+  grid-area: second;
+}
+
+.third {
+  grid-area: third;
 }
 
 .first__label {
@@ -82,3 +76,46 @@ input::-webkit-input-placeholder {
 .choice-date__input_row_start {
   margin-bottom: 14px;
 }
+
+@media (max-width: 1100px) {
+  .choice-date-columns {
+    grid-template-columns: 300px minmax(170px, 251px) minmax(170px, 254px);
+  }
+}
+
+@media (max-width: 830px) {
+  .choice-date-columns {
+    grid-template-columns: minmax(170px, 282px) minmax(170px, 300px);
+    justify-content: space-between;
+    grid-template-areas: 
+    "first first"
+    "second third";
+  }
+
+  .first {
+    /* grid-area: first;
+    align-self: end;
+    display: grid; */
+    grid-template-columns: 134px 226px minmax(170px, 300px);
+    grid-template-rows: 1fr;
+    gap: 14px;
+    grid-template-areas: 
+    "date time count";
+  }
+  
+  .first__label-time {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 500px) {
+  .choice-date-columns {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "first"
+    "second"
+    "third";
+  }
+}
+
