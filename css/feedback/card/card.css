@@ -1,6 +1,8 @@
 .card {
   display: flex;
   gap: 20px;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 .card__image {
@@ -21,7 +23,7 @@
   height: 280px;
   inset: 0;
   background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
-  border-radius: 140px;
+  border-radius: 50%;
 }
 
 .card__caption {
@@ -31,4 +33,81 @@
 .card__description {
   max-width: 680px;
   padding-top: 52px;
+}
+
+@media (max-width: 1100px) {
+  .card {
+    gap: 38px;
+    font-size: 18px;
+    line-height: calc(26 / 18);
+  }
+
+  .card__image {
+    max-width: 172px;
+    height: 172px;
+    margin-bottom: 15px;
+  }
+
+  .card__figure::after {
+    width: 172px;
+    height: 172px;
+  }
+
+  .card__description {
+    max-width: 515px;
+    padding-top: 33px;
+  }
+}
+
+@media (max-width: 830px) {
+  .card {
+    gap: 15px;
+  }
+
+  .card__image {
+    max-width: 153px;
+    height: 153px;
+    margin-bottom: 10px;
+  }
+
+  .card__figure::after {
+    width: 153px;
+    height: 153px;
+  }
+
+  .card__caption {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
+
+  .card__description {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    max-width: 393px;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    font-size: 12px;
+    line-height: calc(16 / 12);
+  }
+
+  .card__image {
+    max-width: 86px;
+    height: 86px;
+    /* margin-bottom: 5px; */
+  }
+
+  .card__figure::after {
+    width: 86px;
+    height: 86px;
+  }
+
+  .card__caption {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }

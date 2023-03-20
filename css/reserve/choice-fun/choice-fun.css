@@ -96,4 +96,8 @@
     width: 30px;
     height: 30px;
   }
+
+  .choice-fun__field_margin_mobile {
+    margin-bottom: 20px;
+  }
 }

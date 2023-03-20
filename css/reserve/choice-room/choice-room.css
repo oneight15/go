@@ -70,7 +70,9 @@
 
 @media (max-width: 500px) {
   .choice-room__btns {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    gap: 14px 20px;
   }
 
   .choice-room__label {
@@ -78,7 +80,7 @@
     min-width: 130px;
     font-size: 14px;
     line-height: calc(18 / 14);
-    padding: 6px 20px;
+    padding: 3px 17px;
   }
 }
 

@@ -301,6 +301,11 @@
 /* ----------------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 500px) {
+  .hero {
+    padding-top: 10px;
+    padding-bottom: 23px;
+  }
+
   .hero__container {
     min-height: 204px;
   }
@@ -308,23 +313,27 @@
   .hero__container::after {
     width: 161px;
     height: 179px;
+    right: 20px;
   }
 
   .hero__title {
     font-size: 35px;
     margin-bottom: 6px;
+    letter-spacing: -0.08em;
   }
 
   .hero__description {
     font-size: 10px;
     line-height: calc(14 / 10);
     margin-bottom: 10px;
+    padding-left: 20px;
   }
 
   .hero__advantages {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     font-size: 10px;
     line-height: 1.1;
+    gap: 20px;
   }
   
   .hero__text:first-child {

@@ -99,7 +99,11 @@
     font-size: 14px;
     line-height: calc(18 / 14);
     margin-bottom: 15px;
-    /* letter-spacing: 1px; */
+    letter-spacing: 0.5px;
+  }
+
+  .form__legend_margin_mobile {
+    margin-bottom: 25px;
   }
   
   .form__fieldset {
@@ -110,7 +114,8 @@
     min-width: 280px;
     font-size: 18px;
     line-height: calc(26 / 18);
-    padding: 17px 58px;
+    padding: 14px 55px;
+    border-radius: 4px;
   }
 }
 

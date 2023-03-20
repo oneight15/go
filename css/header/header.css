@@ -78,6 +78,8 @@
 
   .header__burger {
     display: block;
+    width: 54px;
+    height: 29px;
   }
 
   .header__btn {
@@ -95,6 +97,20 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .header__burger svg {
+    width: 39px;
+    height: 29px;
+  }
+  
+  .header__logo {
+    width: 66px;
+    height: 42px;
+  }
   .header__btn {
     display: none;
   }
