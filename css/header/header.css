@@ -1,13 +1,13 @@
 .header {
   padding-top: 30px;
-  padding-bottom: 23px;
+  padding-bottom: 25px;
 }
 
 .header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 5px;
   text-transform: uppercase;
 }
 
@@ -19,16 +19,21 @@
   font-size: 0;
 }
 
+.header__logo {
+  width: 120px;
+  height: 66px;
+}
+
 .header__btn {
   border: 3px solid var(--second-color, #cd06ff);
   border-radius: 10px;
-  max-width: 286px;
-  padding: 9px 32px 10px;
+  min-width: 280px;
+  padding: 9px 29px 10px;
   color: inherit;
   text-transform: inherit;
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.36;
+  line-height: calc(30 / 22);
   white-space: nowrap;
   transition-duration: 0.5s;
   transition-property: background-color, border-color, color;

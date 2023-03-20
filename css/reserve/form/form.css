@@ -22,10 +22,10 @@
   /* height: 60px; */
   font-weight: 700;
   font-size: 22px;
-  line-height: 1.27;
+  line-height: calc(28 / 22);
   text-transform: uppercase;
   color: var(--purple-color, #6c0287);
-  padding: 16px 50px;
+  padding: 13px 47px;
   margin-right: 100px;
   position: relative;
   z-index: 2;

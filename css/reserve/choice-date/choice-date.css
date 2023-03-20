@@ -70,7 +70,7 @@ input::-webkit-input-placeholder {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 700;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .choice-date__input_row_start {
