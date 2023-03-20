@@ -7,21 +7,23 @@
 }
 
 .about-us__columns {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(400px, 600px) minmax(400px, 500px);
+  grid-template-rows: 222px 325px;
   justify-content: space-between;
-  gap: 20px;
+  gap: 58px 20px;
+  grid-template-areas: 
+  "about-us-image about-us-advantages"
+  "about-us-image blockquote";
 }
 
 .about-us__image {
-  max-width: 600px;
-}
-
-.about-us__text {
-  max-width: 500px;
+  grid-area: about-us-image;
 }
 
 .about-us__advantages {
-  margin-bottom: 55px;
+  /* margin-bottom: 55px; */
+  grid-area: about-us-advantages;
 }
 
 .about-us__description {
@@ -38,6 +40,7 @@
   padding-left: 31px;
   background-image: url("../../img/about-us/quote-start.svg");
   background-repeat: no-repeat;
+  grid-area: blockquote;
 }
 
 .blockquote__quote {
@@ -46,6 +49,7 @@
   text-transform: uppercase;
   margin-bottom: 28px;
   position: relative;
+  max-width: 420px;
 }
 
 .blockquote__quote::after {
@@ -85,4 +89,174 @@
   font-style: normal;
   max-width: 260px;
   text-align: start;
+}
+
+@media (max-width: 1100px) {
+  .about-us {
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+  
+  .about-us__title {
+    font-size: 30px;
+    line-height: calc(40 / 30);
+    margin-bottom: 26px;
+  }
+
+  .about-us__columns {
+    grid-template-columns: minmax(300px, 421px) minmax(300px, 444px);
+    grid-template-rows: minmax(195px, 1fr) 217px;
+    gap: 36px 20px;
+  }
+
+  .about-us__description {
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    margin-bottom: 26px;
+  }
+
+  .blockquote {
+    padding-left: 26px;
+    background-size: 15px 36px;
+  }
+
+  .blockquote__quote {
+    max-width: 400px;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 19px;
+  }
+
+  .blockquote__quote::after {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .blockquote__creator {
+    padding-right: 0;
+  }
+
+  .blockquote__creator::before {
+    width: 70px;
+    height: 70px;
+    margin-right: 29px;
+  }
+
+  .blockquote__creator-cite {
+    font-size: 18px;
+    line-height: calc(26 / 18);
+    max-width: 225px;
+  }
+}
+
+@media (max-width: 830px) {
+  .about-us {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  
+  .about-us__title {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .about-us__columns {
+    grid-template-columns: 382px 278px;
+    grid-template-rows: 380px 184px;
+    gap: 40px 28px;
+    grid-template-areas: 
+    "about-us-image about-us-advantages"
+    "blockquote blockquote";
+  }
+
+  .about-us__advantages {
+    align-self: center;
+  }
+
+  .about-us__description {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    margin-bottom: 22px;
+  }
+
+  .blockquote {
+    padding-left: 26px;
+    background-size: 15px 36px;
+  }
+
+  .blockquote__quote {
+    max-width: 660px;
+    font-size: 32px;
+    line-height: calc(36 / 32);
+    margin-bottom: 21px;
+  }
+
+  .blockquote__quote::after {
+    font-size: 32px;
+    line-height: calc(36 / 32);
+  }
+
+  .blockquote__creator::before {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-us {
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+  
+  .about-us__title {
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    margin-bottom: 15px;
+  }
+
+  .about-us__columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: 127px 280px 164px;
+    gap: 15px;
+    grid-template-areas:
+    "about-us-advantages"
+    "about-us-image"
+    "blockquote";
+  }
+
+  .about-us__advantages {
+    align-self: stretch;
+  }
+
+  .about-us__description {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    margin-bottom: 22px;
+  }
+
+  .blockquote {
+    padding-left: 16px;
+    background-size: 15px 36px;
+  }
+
+  .blockquote__quote {
+    max-width: 280px;
+    font-size: 18px;
+    line-height: calc(26 / 18);
+    margin-bottom: 21px;
+  }
+
+  .blockquote__quote::after {
+    font-size: 32px;
+    line-height: calc(36 / 32);
+  }
+
+  .blockquote__creator::before {
+    margin-right: 20px;
+  }
+
+  .blockquote__creator-cite {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+  }
 }
