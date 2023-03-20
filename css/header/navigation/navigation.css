@@ -28,7 +28,7 @@
 }
 
 @media (max-width: 830px) {
-  .navigation__list {
+  .navigation {
     display: none;
   }
 }

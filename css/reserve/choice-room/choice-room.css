@@ -7,8 +7,7 @@
 .choice-room__label {
   background-color: var(--main-color, #ffffff);
   border-radius: 8px;
-  min-width: 250px; /* заменить на min-width */
-  /* height: 55px; */
+  min-width: 250px;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33;
@@ -56,7 +55,7 @@
     min-width: 180px;
     font-size: 20px;
     line-height: 1.2;
-    padding: 10px 20px;
+    padding: 7px 17px;
   }
 }
 
@@ -65,7 +64,7 @@
     min-width: 150px;
     font-size: 16px;
     line-height: calc(20 / 16);
-    padding: 9px 20px;
+    padding: 6px 17px;
   }
 }
 

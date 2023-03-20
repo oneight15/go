@@ -1,6 +1,6 @@
 .choice-fun-columns {
   display: grid;
-  grid-template-columns: minmax(220px, 280px) minmax(220px, 300px) minmax(220px, 300px);
+  grid-template-columns: minmax(260px, 280px) minmax(220px, 300px) minmax(220px, 300px);
   justify-content: flex-end;
   gap: 100px;
 }
