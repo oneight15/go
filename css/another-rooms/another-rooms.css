@@ -1,0 +1,128 @@
+.another-rooms {
+  padding-top: 50px;
+  padding-bottom: 82px;
+}
+
+.another-rooms__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.another-rooms__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 380px));
+  grid-template-rows: 229px;
+  column-gap: 20px;
+}
+
+.another-rooms__item {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.another-rooms__item_type_wild-west {
+  background-image: url("../../img/rooms/wild-west.jpg");
+}
+  
+.another-rooms__item_type_star-wars {
+background-image: url("../../img/rooms/star-wars.jpg");
+}
+
+.another-rooms__item_type_neon-style {
+background-image: url("../../img/rooms/neon-style.jpg");
+}
+
+.another-rooms__link {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 160px;
+  padding: 78px 0;
+}
+
+@media (max-width: 1100px) {
+  .another-rooms {
+    padding-top: 35px;
+    padding-bottom: 42px;
+  }
+
+  .another-rooms__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .another-rooms__list {
+    grid-template-columns: repeat(3, minmax(208px, 288px));
+    grid-template-rows: 172px;
+  }
+
+  .another-rooms__link {
+    max-width: 160px;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 830px) {
+  .another-rooms {
+    padding-top: 30px;
+    padding-bottom: 35px;
+  }
+
+  .another-rooms__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .another-rooms__list {
+    grid-template-columns: repeat(3, minmax(124px, 224px));
+    grid-template-rows: 134px;
+    gap: 8px;
+  }
+
+  .another-rooms__link {
+    font-size: 20px;
+    max-width: 110px;
+    padding: 43px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .another-rooms {
+    padding-top: 15px;
+    padding-bottom: 21px;
+  }
+
+  .another-rooms__title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .another-rooms__list {
+    grid-template-columns: 280px;
+    grid-template-rows: repeat(3, 140px);
+    gap: 5px;
+  }
+
+  .another-rooms__item {
+    background-size: cover;
+  }
+
+  .another-rooms__link {
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 61px;
+    padding: 46px 0;
+  }
+}

@@ -94,7 +94,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .form__legend {
     font-size: 14px;
     line-height: calc(18 / 14);

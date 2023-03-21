@@ -37,9 +37,6 @@
 }
 
 .blockquote {
-  padding-left: 31px;
-  background-image: url("../../img/about-us/quote-start.svg");
-  background-repeat: no-repeat;
   grid-area: blockquote;
 }
 
@@ -50,6 +47,9 @@
   margin-bottom: 28px;
   position: relative;
   max-width: 420px;
+  padding-left: 31px;
+  background-image: url("../../img/about-us/quote-start.svg");
+  background-repeat: no-repeat;
 }
 
 .blockquote__quote::after {
@@ -119,16 +119,14 @@
     margin-bottom: 26px;
   }
 
-  .blockquote {
-    padding-left: 26px;
-    background-size: 15px 36px;
-  }
-
   .blockquote__quote {
     max-width: 400px;
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 19px;
+    padding-left: 26px;
+    background-size: 15px 36px;
+    background-position: top -15px left;
   }
 
   .blockquote__quote::after {
@@ -137,6 +135,7 @@
   }
 
   .blockquote__creator {
+    
     padding-right: 0;
   }
 
@@ -166,7 +165,7 @@
   }
 
   .about-us__columns {
-    grid-template-columns: 382px 278px;
+    grid-template-columns: minmax(250px, 382px) minmax(200px, 278px);
     grid-template-rows: 380px 184px;
     gap: 40px 28px;
     grid-template-areas: 
@@ -184,16 +183,13 @@
     margin-bottom: 22px;
   }
 
-  .blockquote {
-    padding-left: 26px;
-    background-size: 15px 36px;
-  }
-
   .blockquote__quote {
     max-width: 660px;
     font-size: 32px;
     line-height: calc(36 / 32);
     margin-bottom: 21px;
+    padding-left: 26px;
+    background-size: 15px 36px;
   }
 
   .blockquote__quote::after {
@@ -206,10 +202,28 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 674px) {
+  .about-us__title {
+    font-size: 16px;
+    line-height: calc(18 / 16);
+    margin-bottom: 25px;
+  }
+
+  .about-us__columns {
+    grid-template-columns: 1fr;
+    grid-template-rows: 147px 380px 214px;
+    gap: 15px;
+    grid-template-areas:
+    "about-us-advantages"
+    "about-us-image"
+    "blockquote";
+  }
+}
+
+@media (max-width: 480px) {
   .about-us {
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
   }
   
   .about-us__title {
@@ -238,17 +252,14 @@
     margin-bottom: 16px;
   }
 
-  .blockquote {
-    padding-left: 16px;
-    background-size: 15px 36px;
-  }
-
   .blockquote__quote {
     max-width: 280px;
     font-size: 18px;
     line-height: calc(26 / 18);
     margin-bottom: 9px;
     padding-top: 6px;
+    padding-left: 16px;
+    background-size: 11px 50px;
   }
 
   .blockquote__quote::after {
@@ -264,7 +275,7 @@
   .blockquote__creator::before {
     width: 56px;
     height: 56px;
-    margin-right: 11px;
+    margin-right: 6px;
   }
 
   .blockquote__creator-cite {

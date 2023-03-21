@@ -60,6 +60,10 @@
 }
 
 @media (max-width: 830px) {
+  .choice-room__btns {
+    flex-wrap: wrap;
+  }
+
   .choice-room__label {
     min-width: 150px;
     font-size: 16px;
@@ -68,11 +72,20 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 674px) {
   .choice-room__btns {
     display: grid;
-    grid-template-columns: repeat(2, 130px);
+    grid-template-columns: repeat(2, minmax(130px, 230px));
     gap: 14px 20px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .choice-room__btns {
+    /* display: grid; */
+    grid-template-columns: repeat(2, 130px);
+    /* gap: 14px 20px; */
   }
 
   .choice-room__label {

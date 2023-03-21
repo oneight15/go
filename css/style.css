@@ -4,8 +4,11 @@
 @import url("header/header.css");
 @import url("header/navigation/navigation.css");
 @import url("hero/hero.css");
+@import url("present/present.css");
 @import url("advantages/advantages.css");
 @import url("rooms/rooms.css");
+@import url("about-room/about-room.css");
+@import url("another-rooms/another-rooms.css");
 @import url("reserve/reserve.css");
 @import url("reserve/form/form.css");
 @import url("reserve/choice-room/choice-room.css");

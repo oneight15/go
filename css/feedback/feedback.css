@@ -58,8 +58,23 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
+  .feedback {
+    padding-top: 8px;
+    padding-bottom: 15px;
+  }
+  
+  .feedback__title {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    margin-bottom: 15px;
+  }
+
   .feedback__list {
     padding: 0;
+  }
+
+  .feedback__item:not(:last-child) {
+    margin-bottom: 23px;
   }
 }

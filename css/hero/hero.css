@@ -299,8 +299,18 @@
 }
 
 /* ----------------------------------------------------------------------------------------------------------- */
+@media (max-width: 674px) {
+  .hero__container {
+    min-height: 424px;
+  }
 
-@media (max-width: 500px) {
+  .hero__container::after {
+    width: 231px;
+    bottom: -170px;
+  }
+}
+
+@media (max-width: 480px) {
   .hero {
     padding-top: 10px;
     padding-bottom: 23px;
@@ -314,6 +324,7 @@
     width: 161px;
     height: 179px;
     right: 20px;
+    bottom: 0;
   }
 
   .hero__title {

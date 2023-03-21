@@ -71,7 +71,14 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 674px) {
+  .choice-fun-columns {
+    grid-template-columns: minmax(280px, 480px);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
   .choice-fun-columns {
     grid-template-columns: 1fr;
     gap: 25px;
