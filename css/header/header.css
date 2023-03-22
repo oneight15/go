@@ -158,7 +158,7 @@
     width: 310px;
     letter-spacing: 0.5px;
     font-size: 16px;
-    line-height: 28px;
+    line-height: calc(28 / 16);
   }
 }
 
@@ -190,7 +190,7 @@
     width: 180px;
     letter-spacing: 0.5px;
     font-size: 12px;
-    line-height: 16px;
+    line-height: calc(16 / 12);
   }
 
   .link-back-svg {

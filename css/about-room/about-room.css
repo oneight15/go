@@ -7,7 +7,7 @@
 .about-room__title {
   font-weight: 700;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 1.25;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
@@ -33,7 +33,7 @@
 .about-room__text {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.4;
 }
 
 .about-room__text:not(:last-child) {
@@ -48,7 +48,7 @@
 
   .about-room__title {
     font-size: 30px;
-    line-height: 40px;
+    line-height: calc(40 / 30);
     margin-bottom: 36px;
   }
 
@@ -63,7 +63,7 @@
   
   .about-room__text {
     font-size: 18px;
-    line-height: 28px;
+    line-height: calc(28 / 18);
   }
 }
 
@@ -75,7 +75,7 @@
 
   .about-room__title {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 1.5;
     margin-bottom: 30px;
   }
 
@@ -93,7 +93,7 @@
   
   .about-room__text {
     font-size: 16px;
-    line-height: 28px;
+    line-height: calc(28 / 16);
   }
 }
 
@@ -112,7 +112,7 @@
 
   .about-room__title {
     font-size: 14px;
-    line-height: 18px;
+    line-height: calc(18 / 14);
     margin-bottom: 15px;
   }
 
@@ -132,6 +132,6 @@
   
   .about-room__text {
     font-size: 12px;
-    line-height: 16px;
+    line-height: calc(16 / 12);
   }
 }
