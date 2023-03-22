@@ -20,6 +20,9 @@
 }
 
 .another-rooms__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -44,14 +47,23 @@ background-image: url("../../img/rooms/neon-style.jpg");
 }
 
 .another-rooms__link {
-  display: inline-block;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
-  max-width: 170px;
-  padding: 78px 0;
+  max-width: 380px;
+  padding: 78px 114px;
+  transition-duration: 0.5s;
+  transition-property: transform, color;
+}
+
+.another-rooms__link:hover {
+  transform: scale(1.5);
+}
+
+.another-rooms__link:focus {
+  color: var(--second-color, #cd06ff);
 }
 
 .another-rooms__link_type_vibes {
@@ -76,8 +88,8 @@ background-image: url("../../img/rooms/neon-style.jpg");
   }
 
   .another-rooms__link {
-    max-width: 160px;
-    padding: 50px 0;
+    max-width: 288px;
+    padding: 50px 68px;
   }
 }
 
@@ -101,8 +113,8 @@ background-image: url("../../img/rooms/neon-style.jpg");
 
   .another-rooms__link {
     font-size: 20px;
-    max-width: 100px;
-    padding: 43px 0;
+    max-width: 224px;
+    padding: 43px 57px;
   }
 }
 
@@ -131,7 +143,7 @@ background-image: url("../../img/rooms/neon-style.jpg");
   .another-rooms__link {
     font-size: 20px;
     line-height: 1.2;
-    max-width: 61px;
-    padding: 46px 0;
+    max-width: 280px;
+    padding: 46px 89px;
   }
 }

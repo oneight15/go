@@ -69,7 +69,7 @@
   color: var(--main-color, #ffffff);
 }
 
-.header__secondary_room {
+.header_secondary_room {
   padding-bottom: 20px;
 }
 

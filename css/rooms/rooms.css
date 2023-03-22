@@ -14,20 +14,33 @@
 }
 
 .rooms__item {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 
 .rooms__link {
-  display: inline-block;
-  max-width: 270px;
+  max-width: 580px;
   font-size: 70px;
   line-height: 1.15;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 94px 0 95px;
+  padding: 94px 120px 95px;
+  transition-duration: 0.5s;
+  transition-property: transform, color;
 }
+
+.rooms__link:hover {
+  transform: scale(1.2);
+}
+
+.rooms__link:focus {
+  color: var(--second-color, #cd06ff);
+}
+
 
 .rooms__item_type_vibes {
   background-image: url("../../img/rooms/vibes.jpg");
@@ -62,10 +75,10 @@
   }
   
   .rooms__link {
-    max-width: 252px;
+    max-width: 443px;
     font-size: 50px;
     line-height: 1.2;
-    padding: 73px 0 72px;
+    padding: 73px 95px 72px;
   }
 }
 
@@ -86,10 +99,32 @@
   }
   
   .rooms__link {
-    max-width: 130px;
+    max-width: 335px;
     font-size: 40px;
     line-height: 1.25;
-    padding: 61px 0 40px;
+    padding: 61px 80px 40px;
+  }
+}
+
+@media (max-width: 674px) {
+  .rooms {
+    padding-top: 20px;
+    padding-bottom: 45px;
+  }
+  
+  .rooms__title {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  .rooms__list {
+    grid-template-rows: repeat(2, 200px);
+  }
+  
+  .rooms__link {
+    max-width: 290px;
+    font-size: 30px;
+    padding: 71px 50px 50px;
   }
 }
 
@@ -112,9 +147,9 @@
   }
   
   .rooms__link {
-    max-width: 85px;
+    max-width: 280px;
     font-size: 26px;
     line-height: calc(34 / 26);
-    padding: 50px 0;
+    padding: 50px 90px;
   }
 }
