@@ -68,6 +68,10 @@
   stroke: var(--main-color, #ffffff);
 }
 
+.faq__item:nth-child(n):focus {
+  border-radius: 50px;
+}
+
 @media (max-width: 1100px) {
   .faq {
     padding-top: 35px;

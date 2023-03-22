@@ -1,19 +1,14 @@
 .present {  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   text-align: center;
   padding-bottom: 50px;
 }
 
-.present::before {
+.present_room_vibes::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   background-image: url("../../img/rooms/present-vibes.jpg");
   height: 750px;
   z-index: -2;
@@ -22,13 +17,52 @@
   background-position: center;
 }
 
-.present::after {
+.present_room_neon-style::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
+  background-image: url("../../img/rooms/present-neon.jpg");
+  height: 750px;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.present_room_star-wars::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/rooms/present-star.jpg");
+  height: 750px;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.present_room_wild-west::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/rooms/present-wild.jpg");
+  height: 750px;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 85%;
+}
+
+.present_room_vibes::after,
+.present_room_neon-style::after,
+.present_room_wild-west::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
   background-color:rgba(0,0,0, 0.3);
   height: 750px;
   z-index: -1;

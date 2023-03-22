@@ -26,6 +26,11 @@
   text-align: center;
 }
 
+.another-rooms__item_type_vibes {
+  background-image: url("../../img/rooms/vibes.jpg");
+  background-size: 118%;
+}
+
 .another-rooms__item_type_wild-west {
   background-image: url("../../img/rooms/wild-west.jpg");
 }
@@ -45,8 +50,12 @@ background-image: url("../../img/rooms/neon-style.jpg");
   line-height: 120%;
   text-align: center;
   text-transform: uppercase;
-  max-width: 160px;
+  max-width: 170px;
   padding: 78px 0;
+}
+
+.another-rooms__link_type_vibes {
+  padding: 97px 0;
 }
 
 @media (max-width: 1100px) {
@@ -92,7 +101,7 @@ background-image: url("../../img/rooms/neon-style.jpg");
 
   .another-rooms__link {
     font-size: 20px;
-    max-width: 110px;
+    max-width: 100px;
     padding: 43px 0;
   }
 }

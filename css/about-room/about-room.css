@@ -97,6 +97,13 @@
   }
 }
 
+@media (max-width: 674px) {
+  .about-room__columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 @media (max-width: 480px) {
   .about-room {
     padding-top: 15px;
