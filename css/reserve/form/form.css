@@ -94,6 +94,12 @@
   }
 }
 
+@media (max-width: 674px) {
+  .form {
+    text-align: center;
+  }
+}
+
 @media (max-width: 480px) {
   .form__legend {
     font-size: 14px;
