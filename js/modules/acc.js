@@ -8,7 +8,7 @@ btns.forEach((btn, index) => {
       if (index === i) {
         answerWrappers[i].style.height =
           items[i].classList.contains('item_active') ?
-          '' : `214px`;
+          '' : `250px`;
         items[i].classList.toggle('item_active');
       } else {
         items[i].classList.remove('item_active');
