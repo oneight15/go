@@ -1,8 +1,7 @@
 const items = document.querySelectorAll('.faq__item');
-const btns = document.querySelectorAll('.faq__btn');
 const answerWrappers = document.querySelectorAll('.faq__answer-wrapper');
 
-btns.forEach((btn, index) => {
+items.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     for (let i = 0; i < items.length; i += 1) {
       if (index === i) {
