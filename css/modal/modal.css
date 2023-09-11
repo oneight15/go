@@ -1,0 +1,101 @@
+.modal {
+  position: relative;
+  background-color: var(--second-bg-color);
+  max-width: 600px;
+  top: 145px;
+  padding: 60px 150px 80px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: inherit;
+  transition: color 0.3s ease-in;
+}
+
+.modal__close:hover {
+  color: var(--second-color);
+}
+
+.modal__close:focus {
+  color: var(--second-color);
+  outline: 1px solid var(--second-color);
+}
+
+.modal__close:active {
+  color: var(--second-purple);
+}
+
+.modal__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: calc(30 / 22);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  display: block;
+  padding: 0 5px;
+  margin-bottom: 40px;
+}
+
+.modal__label-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  margin-bottom: 6px;
+}
+
+.modal__input {
+  width: 100%;
+  border: none;
+  line-height: 1.4;
+  padding: 12px 20px;
+}
+
+.modal__btn {
+  position: relative;
+  z-index: 2;
+  padding: 16px 50px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  color: var(--purple-color);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: calc(28 / 22);
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+}
+
+.modal__btn::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: var(--main-color, #ffffff);
+  filter: blur(10px);
+  inset: 0;
+  z-index: -1;
+}
+
+.modal__btn:hover {
+  background-color: var(--decor-color, #eadeed);
+}
+
+.modal__btn:focus {
+  /* outline: none; */
+  color: var(--second-color);
+}
+
+.modal__btn:active {
+  background-color: var(--purple-color, #6c0287);
+  color: var(--main-color, #ffffff);
+}

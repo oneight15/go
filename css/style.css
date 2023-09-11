@@ -19,4 +19,6 @@
 @import url("feedback/card/card.css");
 @import url("faq/faq.css");
 @import url("footer/footer.css");
+@import url("modal/overlay.css");
+@import url("modal/modal.css");
 
