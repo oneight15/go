@@ -87,6 +87,10 @@
   stroke: var(--main-color, #ffffff);
 }
 
+.path_active {
+  display: none;
+}
+
 @media (max-width: 1100px) {
   .faq {
     padding-top: 35px;

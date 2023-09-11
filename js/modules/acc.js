@@ -9,10 +9,11 @@ items.forEach((btn, index) => {
         answerWrappers[i].style.height =
           items[i].classList.contains('item_active') ?
           '' : `214px`;
+        paths[i].classList.toggle('path_active');
         items[i].classList.toggle('item_active');
-        paths[i].style.stroke = 'transparent';
       } else {
         items[i].classList.remove('item_active');
+        paths[i].classList.remove('path_active');
         answerWrappers[i].style.height = '';
       }
     }
