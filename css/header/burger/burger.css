@@ -1,0 +1,76 @@
+.burger {
+  display: none;
+  position: relative;
+  width: 54px;
+  height: 29px;
+}
+
+.burger__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 5px;
+  border-radius: 5px;
+  transform: translateY(-50%) scale(1);
+  background-color: var(--purple-color, #6c0287);
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.burger::after, .burger::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--purple-color, #6c0287);
+  transition: background-color 0.3s ease-out, transform 0.3s ease-out, top 0.3s ease-out;
+}
+
+.burger::after {
+  top: 0;
+}
+
+.burger::before {
+  right: 23px;
+  bottom: 0;
+}
+
+.burger_active .burger__line {
+  transform: translateY(-50%) scale(0);
+}
+
+.burger_active::before {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+.burger_active::after {
+  top: 50%;
+  transform: rotate(45deg);
+  bottom: auto;
+}
+
+.burger:hover .burger__line,
+.burger:hover::after,
+.burger:hover::before {
+  background-color: var(--second-color, #cd06ff);
+}
+
+.burger:active .burger__line,
+.burger:active::after,
+.burger:active::before {
+  background-color: #840AA3;
+}
+
+.burger:focus {
+  outline: 1px solid var( --second-color, #cd06ff);
+  outline-offset: 3px;
+}
+
+@media (max-width: 830px) {
+  .burger {
+    display: block;
+  }
+}

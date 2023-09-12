@@ -11,27 +11,6 @@
   text-transform: uppercase;
 }
 
-.header__burger {
-  display: none;
-  color: var(--purple-color, #6c0287);
-  outline: 1px solid transparent;
-  transition-duration: 0.5s;
-  transition-property: color, outline;
-}
-
-.header__burger:hover {
-  color: var(--second-color, #cd06ff);
-}
-
-.header__burger:active {
-  color: #840AA3;
-}
-
-.header__burger:focus {
-  outline-color: var( --second-color, #cd06ff);
-  outline-offset: 5px;
-}
-
 .header__link {
   font-size: 0;
 }
