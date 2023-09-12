@@ -31,6 +31,42 @@
   .navigation {
     display: none;
   }
+
+  .navigation_active {
+    display: block;
+    order: 2;
+    width: 100%;
+    position: relative;
+  }
+
+  .navigation__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+    background-color: #1B1A1B;
+    padding: 58px 0;
+  }
+
+  .navigation__link {
+    padding: 0 309px;
+    padding-top: 19px;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+
+  .navigation__link:hover {
+    background-color: #6C0287;
+    color: inherit;
+  }
+
+  .navigation__link:active {
+    background-color: #CD06FF;
+    color: inherit;
+  }
 }
 
 

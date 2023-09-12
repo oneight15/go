@@ -129,6 +129,10 @@
     height: 55px;
   }
 
+  .header__container {
+    flex-wrap: wrap;
+  }
+
   .header__container_secondary_room {
     min-height: 120px;
   }
