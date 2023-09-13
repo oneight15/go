@@ -43,7 +43,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 6;
     flex-direction: column;
     align-items: center;
     gap: 39px;
@@ -66,6 +66,20 @@
   .navigation__link:active {
     background-color: #CD06FF;
     color: inherit;
+  }
+}
+
+@media (max-width: 480px) {
+  .navigation__list {
+    gap: 26px;
+    background-color: #1B1A1B;
+    padding: 37px 0;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+    line-height: calc(22 / 14);
+    padding: 13px 117px;
   }
 }
 

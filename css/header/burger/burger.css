@@ -80,3 +80,22 @@
     display: block;
   }
 }
+
+@media (max-width: 480px) {
+  .burger {
+    width: 39px;
+    height: 20px;
+  }
+
+  .burger__line {
+    height: 4px;
+  }
+
+  .burger::after, .burger::before {
+    height: 4px;
+  }
+
+  .burger::before {
+    right: 15px;
+  }
+}
