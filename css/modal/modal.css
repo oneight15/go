@@ -4,6 +4,7 @@
   max-width: 600px;
   top: 145px;
   padding: 60px 150px 80px;
+  display: none;
 }
 
 .modal__close {
