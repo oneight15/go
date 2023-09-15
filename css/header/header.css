@@ -210,10 +210,6 @@
     height: 42px;
   }
 
-  .header__btn {
-    /* display: none; */
-  }
-
   .header__container_secondary_room {
     min-height: 79px;
   }
